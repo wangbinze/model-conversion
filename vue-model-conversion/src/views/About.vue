@@ -2,7 +2,7 @@
   <div class="about">
     <h1>This is an about page</h1>
     <br>
-    <h2>by Wangbinze</h2>
+    <h2><a href="https://github.com/wangbinze" target="_blank">by Wangbinze</a></h2>
   </div>
 </template>
 
