@@ -1,7 +1,6 @@
 <template>
 	<div>
 		hello info component
-		<button type="button" @click="add()">添加</button>
 	</div>
 </template>
 
@@ -9,9 +8,7 @@
 	export default {
 		name: "Info",
 		methods: {
-			add() {
-				console.log('add Event form info!!!');
-			}
+
 		}
 	}
 </script>
