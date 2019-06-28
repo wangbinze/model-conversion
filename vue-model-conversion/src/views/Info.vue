@@ -1,6 +1,8 @@
 <template>
 	<div>
 		hello info component
+		<br>
+		{{ text }}
 	</div>
 </template>
 
@@ -9,6 +11,11 @@
 		name: "Info",
 		methods: {
 
+		},
+		data: function () {
+			return {
+				text: 'wangbinze'
+			}
 		}
 	}
 </script>
