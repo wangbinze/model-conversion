@@ -1,7 +1,8 @@
 <template>
   <div class="home">
     <img alt="model" src="../assets/ModelPicture.png">
-    <Hello-world msg="Welcome to Your Vue.js App"/>
+    <Hello-world msg="3D模型，改变您的世界！"/>
+    进一步理解空间，发掘更大价值
   </div>
 </template>
 

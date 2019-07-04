@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Info from './views/Info.vue'
 import Conversion from './views/Conversion.vue'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -12,11 +11,6 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
-    },
-    {
-      path: '/info',
-      name: 'info',
-      component: Info
     },
     {
       path: '/conversion',
