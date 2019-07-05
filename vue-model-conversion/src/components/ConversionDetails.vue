@@ -31,7 +31,6 @@
 				Please use the browser supporting "canvas".
 		</canvas>
 
-		<div ref="demo1"></div>
 
 	</div>
 </template>
@@ -44,10 +43,13 @@
 		props: {
 			msg1: String
 		},
+		methods:{
 
+		}
 
 	}
 
+	
 
 </script>
 
