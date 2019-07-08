@@ -7,7 +7,7 @@
     <br>
     <h2><a href="http://www.paramland.com/" target="_blank">PARAMLAND  |  数地景观</a></h2>
     <br>
-    <p><a href="https://github.com/wangbinze" target="_blank">by Wangbinze</a></p>
+    <!--<p><a href="https://github.com/wangbinze" target="_blank">by Wangbinze</a></p>-->
   </div>
 </template>
 
