@@ -61,6 +61,7 @@
 		border: 1px solid aquamarine;
 		text-align: center;
 		margin: auto;
+		background-color: black;
 	}
 
 </style>
