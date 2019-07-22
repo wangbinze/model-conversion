@@ -19,6 +19,9 @@
 
 	export default {
 		name: 'ThreeTest',
+		props: {
+			msg1: String
+		},
 		data () {
 			return {
 				camera: null,
