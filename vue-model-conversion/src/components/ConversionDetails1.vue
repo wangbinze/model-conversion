@@ -1,5 +1,12 @@
 <template>
 	<div>
+		<!--上传按钮-->
+		<div class="section">
+			<input class="upload" type="file" onchange=onUpload2(this.files[0])>
+			<div class="preview preview2"></div>
+		</div>
+
+		<br>
 		<div id="container"></div>
 	</div>
 </template>
@@ -47,6 +54,6 @@
 </script>
 <style scoped>
 	#container {
-		height: 400px;
+		height: 600px;
 	}
 </style>
