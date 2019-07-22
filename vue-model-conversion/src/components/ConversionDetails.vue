@@ -10,9 +10,7 @@
 		<br>
 
 		<!--模型展示位置-->
-		<div id="container">
-		</div>
-
+		<div id="container"></div>
 
 	</div>
 </template>
@@ -40,6 +38,7 @@
 				this.camera = new Three.PerspectiveCamera(70, container.clientWidth / container.clientHeight, 0.01, 10);
 				this.camera.position.z = 0.6;
 				this.scene = new Three.Scene();
+				//长宽高
 				let geometry = new Three.BoxGeometry(0.2, 0.2, 0.2);
 				let material = new Three.MeshNormalMaterial();
 				this.mesh = new Three.Mesh(geometry, material);
