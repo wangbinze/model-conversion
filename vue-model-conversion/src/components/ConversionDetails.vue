@@ -19,7 +19,8 @@
 </template>
 
 <script>
-	import * as THREE from "three";
+	// 引入three.js
+	import * as Three from 'three'
 
 	export default {
 		name: "ConversionDetails",
