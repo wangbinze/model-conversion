@@ -5,13 +5,16 @@
 			<input class="upload" type="file" onchange=onUpload2(this.files[0])>
 			<div class="preview preview2"></div>
 		</div>
-
 		<br>
+
+		<!--模型放置位置-->
 		<div id="container"></div>
+
 	</div>
 </template>
 
 <script>
+	// 引入three.js
 	import * as Three from 'three'
 
 	export default {

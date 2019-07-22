@@ -1,8 +1,8 @@
-<!--<template>
+<template>
 	<div class="conversion">
 		<h3>{{ msg1 }}</h3>
 
-		&lt;!&ndash;上传按钮&ndash;&gt;
+		<!--上传按钮-->
 		<div class="section">
 			<input class="upload" type="file" onchange=onUpload2(this.files[0])>
 			<div class="preview preview2"></div>
@@ -10,7 +10,7 @@
 
 		<br>
 
-		&lt;!&ndash;模型展示位置&ndash;&gt;
+		<!--模型展示位置-->
 		<canvas id="demo1">
 				Please use the browser supporting "canvas".
 		</canvas>
@@ -48,4 +48,4 @@
 		background-color: black;
 	}
 
-</style>-->
+</style>
