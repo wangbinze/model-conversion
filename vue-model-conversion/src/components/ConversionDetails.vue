@@ -18,6 +18,10 @@
 <script>
 	// 引入three.js
 	import * as Three from 'three'
+	// import WebGl from 'WebGL'
+	import OrbitControls from  'three-orbitcontrols'
+	import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader'
+	import GLTFLoader from 'three-gltf-loader';
 
 	export default {
 		name: "ConversionDetails",

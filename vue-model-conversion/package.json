@@ -13,7 +13,10 @@
     "mtl-loader": "^0.2.0",
     "orbit-controls": "^1.2.4",
     "three": "^0.106.2",
+    "three-gltf-loader": "^1.106.0",
     "three-gltf2-helpers": "^1.0.9",
+    "three-obj-mtl-loader": "^1.0.3",
+    "three-orbitcontrols": "^2.102.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "webgl": "0.0.7"
