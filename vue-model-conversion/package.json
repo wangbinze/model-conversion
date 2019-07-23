@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "element-ui": "^2.10.1",
     "gltf-loader": "^0.1.0",
     "mtl-loader": "^0.2.0",
     "orbit-controls": "^1.2.4",
