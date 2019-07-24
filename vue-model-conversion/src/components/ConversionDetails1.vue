@@ -31,8 +31,8 @@
 	import * as THREE from 'three'
 	// import WebGl from 'WebGL'
 	// import OrbitControls from  'three-orbitcontrols'
-	import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader'
-	import GLTFLoader from 'three-gltf-loader';
+	// import {MTLLoader, OBJLoader} from 'three-obj-mtl-loader'
+	// import GLTFLoader from 'three-gltf-loader';
 
 	export default {
 		name: 'ThreeTest',
@@ -234,13 +234,13 @@
 
 
 			//此处需要点击才能生效 点击文件名可查看文件相关信息  控制台
-			/*handlePreview(file) {
+			handlePreview(file) {
 				console.log(file);
 				var blob = new Blob([file]), // 文件转化成二进制文件
 				url = URL.createObjectURL(blob); //转化成url
 				console.log(url);
 
-				/!*var container = document.getElementById('container');
+				/*var container = document.getElementById('container');
 
 				var renderer;
 
@@ -375,13 +375,13 @@
 				initModel();
 				initControls();
 				animate();
-				window.onresize = onWindowResize;*!/
+				window.onresize = onWindowResize;*/
 
-			},*/
+			},
 
 
 			//原有简单动画
-			/*init: function () {
+			init: function () {
 				let container = document.getElementById('container');
 				this.camera = new THREE.PerspectiveCamera(70, container.clientWidth / container.clientHeight, 0.01, 10);
 				this.camera.position.z = 0.6;
@@ -402,11 +402,11 @@
 				this.mesh.rotation.x += 0.01;
 				this.mesh.rotation.y += 0.01;
 				this.renderer.render(this.scene, this.camera);
-			}*/
+			}
 		},
 		mounted() {
-			// this.init();
-			// this.animate();
+			this.init();
+			this.animate();
 		}
 
 	}
@@ -420,5 +420,11 @@
 		text-align: center;
 		margin: auto;
 		/*background-color: #9ac2be;*/
+	}
+	.el-upload-dragger .el-icon-upload {
+		font-size: 67px;
+		color: #C0C4CC;
+		margin: 20px 0 16px;
+		line-height: 50px;
 	}
 </style>
