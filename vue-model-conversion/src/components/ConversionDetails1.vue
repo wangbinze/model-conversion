@@ -6,7 +6,7 @@
 			class="upload-demo"
 			drag
 			accept=".gltf"
-			action="unloadUrl"
+			action="https://jsonplaceholder.typicode.com/posts/"
 			multiple
 			:on-change="handleChange"
 			:on-remove="handleRemove"
@@ -17,7 +17,6 @@
 			<div class="el-upload__text">将文件拖到此处，或<em>点击上传</em>
 				<br>只能上传OBJ/OSGB/DAE文件
 			</div>
-			<!--<div class="el-upload__tip" slot="tip"><h1>只能上传OBJ/OSGB/DAE文件</h1></div>-->
 		</el-upload>
 
 		<br>
@@ -227,12 +226,12 @@
 
 
 			//此处需要点击才能生效 点击文件名可查看文件相关信息  控制台
-			handlePreview(file) {
-				console.log(file);
-				var blob = new Blob([file]), // 文件转化成二进制文件
-				url = URL.createObjectURL(blob); //转化成url
-				console.log(url);
-			},
+			// handlePreview(file) {
+			// 	console.log(file);
+			// 	var blob = new Blob([file]), // 文件转化成二进制文件
+			// 	url = URL.createObjectURL(blob); //转化成url
+			// 	console.log(url);
+			// },
 
 
 			//原有简单动画

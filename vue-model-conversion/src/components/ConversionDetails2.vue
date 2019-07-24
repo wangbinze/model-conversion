@@ -2,6 +2,24 @@
 	<div>
 		<!--上传按钮-->
 
+		<el-upload
+			class="upload-demo"
+			drag
+			accept=".gltf"
+			action=""
+			multiple
+			:on-change="handleChange"
+			:on-remove="handleRemove"
+			:on-success="handleSuccess"
+			:file-list="fileList"
+		>
+			<i class="el-icon-upload"></i>
+			<div class="el-upload__text">将文件拖到此处，或<em>点击上传</em>
+				<br>只能上传OBJ/OSGB/DAE文件
+			</div>
+			<!--<div class="el-upload__tip" slot="tip"><h1>只能上传OBJ/OSGB/DAE文件</h1></div>-->
+		</el-upload>
+
 		<input type="file" @click="upload()">
 
 		<br>
@@ -28,15 +46,34 @@
 				scene: null,
 				renderer: null,
 				mesh: null,
+				fileList:[{
+					name: '上传后将在此处显示',
+				}],
 			}
 		},
 		methods: {
+
+			handleChange(file, fileList) {
+				this.fileList = fileList.slice(-1);
+			},
+			handleRemove(file, fileList) {
+				console.log(file, fileList);
+			},
+			//上传完成后的回调函数
+			handleSuccess(file){
+				alert('上传完成');
+				//获取url
+				var blob = new Blob([file]), // 文件转化成二进制文件
+					url = URL.createObjectURL(blob); //转化成url
+				console.log(url);
+				//展示模型相关代码
+				this.modelCanvas(url)
+
+			},
+
 			//模型展示js
-
-
-		/*	modelCanvas(url){
+			modelCanvas(url){
 				//3D动画的js代码和函数
-
 
 				var container = document.getElementById('container');
 
@@ -79,8 +116,8 @@
 				function initModel() {
 
 					//辅助工具、视图中间的xyz轴
-					/!*var helper = new THREE.AxesHelper(0);
-					scene.add(helper);*!/
+					/*var helper = new THREE.AxesHelper(0);
+					scene.add(helper);*/
 					//加载gltf格式的模型
 					var loader = new GLTFLoader();
 					loader.setDRACOLoader(new DRACOLoader());
@@ -184,8 +221,16 @@
 				// initStats();
 				animate();
 				window.onresize = onWindowResize;
-			},*/
+			},
 
+
+			//此处需要点击才能生效 点击文件名可查看文件相关信息  控制台
+			// handlePreview(file) {
+			// 	console.log(file);
+			// 	var blob = new Blob([file]), // 文件转化成二进制文件
+			// 	url = URL.createObjectURL(blob); //转化成url
+			// 	console.log(url);
+			// },
 
 
 			//原有简单动画
