@@ -2,23 +2,23 @@
 	<div>
 		<!--上传按钮-->
 
-		<el-upload
-			class="upload-demo"
-			drag
-			accept=".gltf"
-			action="https://jsonplaceholder.typicode.com/posts/"
-			multiple
-			:on-change="handleChange"
-			:on-remove="handleRemove"
-			:on-success="handleSuccess"
-			:file-list="fileList"
-			>
-			<i class="el-icon-upload"></i>
-			<div class="el-upload__text">将文件拖到此处，或<em>点击上传</em>
-				<br>只能上传OBJ/OSGB/DAE文件
-			</div>
-		</el-upload>
 
+		<form>
+		<div>
+			<label for="image_uploads">选择你要查看的模型文件(GLTF)</label>
+			<input type="file" id="image_uploads" name="image_uploads" @change="getFile(file)" accept="" multiple style="display: none">
+		</div>
+
+			<!--<br>-->
+			<!--<br>-->
+
+			<!--<div>-->
+				<!--<button @click="modelFile">Submit</button>-->
+			<!--</div>-->
+		</form>
+
+
+		<br>
 		<br>
 		<!--模型放置位置-->
 		<div id="container"></div>
@@ -27,6 +27,9 @@
 </template>
 
 <script>
+
+
+
 	// 引入three.js
 	import * as THREE from 'three'
 	import {OrbitControls} from  'three/examples/jsm/controls/OrbitControls'
@@ -36,46 +39,46 @@
 	import {DRACOLoader} from  'three/examples/jsm/loaders/DRACOLoader'
 
 
+
 	export default {
 		name: 'ThreeTest',
+		comments:{
+		},
 		data () {
 			return {
 				camera: null,
 				scene: null,
 				renderer: null,
 				mesh: null,
-				fileList:[{
-					name: '上传后将在此处显示',
-				}]
+				file: null
 			}
 		},
 		methods: {
-			handleChange(file, fileList) {
-				this.fileList = fileList.slice(-1);
-			},
-			// submitUpload() {
-			// 	this.$refs.upload.submit();
-			// },
-			handleRemove(file, fileList) {
-				console.log(file, fileList);
-			},
-			//上传完成后的回调函数
-			handleSuccess(file){
-				alert('上传完成');
-				//获取url
-				var blob = new Blob([file]), // 文件转化成二进制文件
-				url = URL.createObjectURL(blob); //转化成url
-				console.log(url);
-				//展示模型相关代码
-				this.modelCanvas(url)
 
+			getFile(file){
+					let blob = new Blob([file]), // 文件转化成二进制文件
+					url = URL.createObjectURL(blob); //转化成url
+					// var url = url0.replace(/http:\/\/localhost:8082/, "null")
+					console.log(url);
+					this.modelCanvas(url)
 			},
+			// modelFile(file) {
+			// 	//获取url
+			// 	var blob = new Blob([file]), // 文件转化成二进制文件
+			// 	url = URL.createObjectURL(blob); //转化成url
+			// 	console.log(url);
+			// 	//展示模型相关代码
+			// 	this.modelCanvas(url)
+			// },
+
 
 			//模型展示js
 			modelCanvas(url){
 				//3D动画的js代码和函数
-
-
+				// var blob = new Blob([file]), // 文件转化成二进制文件
+				// url = URL.createObjectURL(blob); //转化成url
+				// console.log(url);
+				
 				var container = document.getElementById('container');
 
 				var renderer;
@@ -114,7 +117,7 @@
 					scene.add(light);
 				}
 
-				function initModel(url) {
+				function initModel() {
 
 					//辅助工具、视图中间的xyz轴
 					/*var helper = new THREE.AxesHelper(0);
@@ -129,7 +132,7 @@
 						//  在此处设置  对路径进行选择
 						// '../Output/model3.gltf',
 						url,
-
+						// console.log(url),
 						// called when the resource is loaded
 						function (gltf) {
 							//设置模型大小
@@ -148,6 +151,7 @@
 						// called when loading has errors
 						function (error) {
 							console.log('An error happened');
+							console.log(error);
 						},
 					)
 				}
@@ -224,61 +228,64 @@
 				window.onresize = onWindowResize;
 			},
 
-
-			//此处需要点击才能生效 点击文件名可查看文件相关信息  控制台
-			// handlePreview(file) {
-			// 	console.log(file);
-			// 	var blob = new Blob([file]), // 文件转化成二进制文件
-			// 	url = URL.createObjectURL(blob); //转化成url
-			// 	console.log(url);
-			// },
-
-
-			//原有简单动画
-			/*init: function () {
-				let container = document.getElementById('container');
-				this.camera = new THREE.PerspectiveCamera(70, container.clientWidth / container.clientHeight, 0.01, 10);
-				this.camera.position.z = 0.6;
-				this.scene = new THREE.Scene();
-				//长宽高
-				let geometry = new THREE.BoxGeometry(0.2, 0.2, 0.2);
-				let material = new THREE.MeshNormalMaterial();
-				this.mesh = new THREE.Mesh(geometry, material);
-				this.scene.add(this.mesh);
-
-				this.renderer = new THREE.WebGLRenderer({antialias: true});
-				this.renderer.setSize(container.clientWidth, container.clientHeight);
-				container.appendChild(this.renderer.domElement);
-			},
-			//运动
-			animate: function () {
-				requestAnimationFrame(this.animate);
-				this.mesh.rotation.x += 0.01;
-				this.mesh.rotation.y += 0.01;
-				this.renderer.render(this.scene, this.camera);
-			}*/
 		},
 		mounted() {
-			/*this.init();
-			this.animate();*/
+
 		}
 
 	}
 </script>
 <style scoped>
-	#container {
-		/*width: 90%;*/
+/*	#container {
+		width: 90%;
 		height: 500px;
-		/*!*background-color: aquamarine;*!*/
-		/*border: 1px solid #ff0d21;*/
+		!*!*background-color: aquamarine;*!*!
+		border: 1px solid #ff0d21;
 		text-align: center;
 		margin: auto;
-		/*background-color: #9ac2be;*/
+		!*background-color: #9ac2be;*!
+	}*/
+	/*form {*/
+		/*width: 600px;*/
+		/*background: #ccc;*/
+		/*margin: 0 auto;*/
+		/*padding: 20px;*/
+		/*border: 1px solid black;*/
+	/*}*/
+	form ol {
+		padding-left: 0;
 	}
-	.el-upload-dragger .el-icon-upload {
-		font-size: 67px;
-		color: #C0C4CC;
-		margin: 20px 0 16px;
-		line-height: 50px;
+	form li, div > p {
+		background: #eee;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		list-style-type: none;
+		border: 1px solid black;
 	}
+	form img {
+		height: 64px;
+		order: 1;
+	}
+	form p {
+		line-height: 32px;
+		padding-left: 10px;
+	}
+	form label, form button {
+		background-color: #7F9CCB;
+		padding: 5px 10px;
+		border-radius: 5px;
+		border: 1px ridge black;
+		font-size: 1.2rem;
+		height: auto;
+	}
+	form label:hover, form button:hover {
+		background-color: #2D5BA3;
+		color: white;
+	}
+	form label:active, form button:active {
+		background-color: #0D3F8F;
+		color: white;
+	}
+
 </style>

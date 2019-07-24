@@ -8,7 +8,7 @@
 
 <script>
 
-	import ConversionDetails from '@/components/ConversionDetails1.vue'
+	import ConversionDetails from '@/components/ConversionDetailsFile.vue'
 
 	export default {
 		name: "conversion",
