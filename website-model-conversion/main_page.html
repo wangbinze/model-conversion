@@ -1,13 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Model Conversion</title>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="images/model.ico">
+	<title>重庆数地景观-3D模型在线查看和转换</title>
+	<!--css文件引入-->
+
+	<!--上传按钮-->
+	<link rel="stylesheet" href="./css/upload.css">
 </head>
 <body>
-	<div class="container">
-		<h1>重庆数地景观设计有限公司</h1>
-		<h2>3D模型转换专用页面</h2>
-	</div>
+
+<header>
+	<p></p>
+</header>
+
+<div class="description">
+	<h1>转换页面</h1>
+	<P>您可以通过本页面对你的3D模型进行<b>在线查看</b>和<b>转换</b>，<b>不需要</b>任何第三方软件</P>
+	<p>所有转换都发生在您的PC上，任何模型或文本都不会上传到我们的服务器或以任何方式存储。</p>
+</div>
+
+
+<!--上传按钮-->
+<div>
+	<form>
+		<div>
+			<label for="file_uploads">选择你要查看的模型文件(GLTF)</label>
+			<input type="file"
+			       id="file_uploads"
+			       name="file_uploads"
+			       onchange="onUpload(this.files[0])"
+			       accept="" multiple>
+		</div>
+	</form>
+</div>
+<div id="container"></div>
 </body>
+<!-- 加载loaders JS文件 -->
+<script type="text/javascript" src="./three/three.js"></script>
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/WebGL.js"></script>
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/controls/OrbitControls.js"></script>
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/DRACOLoader.js"></script>
+
+<!-- GLTF加载器 -->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/GLTFLoader.js"></script>
+
+<!---->
+<script type="text/javascript" src="./js/upload-gltf.js"></script>
+
+
 </html>
