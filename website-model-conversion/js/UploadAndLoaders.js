@@ -27,7 +27,7 @@ function onUpload(file) {
 	} else if (file.name.slice(-4) == '.obj') {
 		//调用模型转换函数
 		//obj2gltf
-		obj2gltf(url);
+		myObj2Gltf(url);
 
 
 
