@@ -1,5 +1,16 @@
 
 function onUpload(file) {
+
+
+
+	//对文件进行判断
+
+
+
+
+
+
+
 	// 文件转化成二进制文件
 	var blob = new Blob([file]),
 	//转化成url
@@ -15,6 +26,14 @@ function onUpload(file) {
 			fs.writeFileSync(url1, data);
 		});*/
 
+	//调用gltfShow  需要传参
+	gltfShow(url);
+}
+
+
+
+//gltf展示  需要传参
+function gltfShow(url) {
 	//3D动画的js代码和函数
 
 	// 获取container
@@ -164,3 +183,5 @@ function onUpload(file) {
 	animate();
 	window.onresize = onWindowResize;
 }
+
+
