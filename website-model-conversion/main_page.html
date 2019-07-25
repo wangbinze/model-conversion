@@ -43,14 +43,25 @@
 <!-- 加载loaders JS文件 -->
 <script type="text/javascript" src="./three/three.js"></script>
 <script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/WebGL.js"></script>
+<!-- GLTF加载器 -->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/GLTFLoader.js"></script>
+<!--obj加载器-->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/OBJLoader.js"></script>
+<!--dae 加载器-->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/ColladaLoader.js"></script>
+
+
 <script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/controls/OrbitControls.js"></script>
 <script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/DRACOLoader.js"></script>
 
-<!-- GLTF加载器 -->
-<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/GLTFLoader.js"></script>
 
-<!---->
-<script type="text/javascript" src="./js/upload-gltf.js"></script>
-
+<!-- 点击上传后对file进行判断，获取url地址 -->
+<script type="text/javascript" src="js/UploadAndLoaders.js"></script>
+<!--使用gltf模型文件进行展示绘制-->
+<script type="text/javascript" src="js/gltfShow.js"></script>
+<!--使用obj模型文件进行展示绘制-->
+<script type="text/javascript" src="js/objShow.js"></script>
+<!--使用dae模型文件进行展示绘制-->
+<script type="text/javascript" src="js/daeShow.js"></script>
 
 </html>

@@ -1,37 +1,3 @@
-
-function onUpload(file) {
-
-
-
-	//对文件进行判断
-
-
-
-
-
-
-
-	// 文件转化成二进制文件
-	var blob = new Blob([file]),
-	//转化成url
-	url = URL.createObjectURL(blob);
-	console.log(url);
-
-	//转换obj2gltf的
-	/*const obj2gltf = require('obj2gltf');
-	const fs = require('fs');
-	obj2gltf(url)
-		.then(function(gltf) {
-			const data = Buffer.from(JSON.stringify(gltf));
-			fs.writeFileSync(url1, data);
-		});*/
-
-	//调用gltfShow  需要传参
-	gltfShow(url);
-}
-
-
-
 //gltf展示  需要传参
 function gltfShow(url) {
 	//3D动画的js代码和函数
@@ -183,5 +149,3 @@ function gltfShow(url) {
 	animate();
 	window.onresize = onWindowResize;
 }
-
-
