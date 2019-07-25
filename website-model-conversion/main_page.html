@@ -11,35 +11,55 @@
 
 	<!--上传按钮-->
 	<link rel="stylesheet" href="./css/upload.css">
+	<style>
+		body{
+			text-align:center;
+		}
+		.description{
+			margin-bottom: 15px;
+		}
+		.uploadebutton{
+			margin: 20px 0;
+		}
+		#file_uploads {
+			display: none;
+		}
+	</style>
 </head>
 <body>
 
 <header>
-	<p></p>
+	<h1>重庆数地景观</h1>
 </header>
 
 <div class="description">
-	<h1>转换页面</h1>
+	<h2>转换页面</h2>
 	<P>您可以通过本页面对你的3D模型进行<b>在线查看</b>和<b>转换</b>，<b>不需要</b>任何第三方软件</P>
 	<p>所有转换都发生在您的PC上，任何模型或文本都不会上传到我们的服务器或以任何方式存储。</p>
 </div>
 
 
 <!--上传按钮-->
-<div>
+<div class="uploadebutton">
 	<form>
 		<div>
-			<label for="file_uploads">选择你要查看的模型文件(GLTF)</label>
+			<label for="file_uploads">选择你要查看的模型文件(GLTF/DAE/OBJ)</label>
 			<input type="file"
 			       id="file_uploads"
 			       name="file_uploads"
 			       onchange="onUpload(this.files[0])"
 			       accept="" multiple>
 		</div>
+
+		<br>
+		<input type="text" disabled="disable" value="文件名" id="fileName">
 	</form>
 </div>
 <div id="container"></div>
 </body>
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+
+
 <!-- 加载loaders JS文件 -->
 <script type="text/javascript" src="./three/three.js"></script>
 <script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/WebGL.js"></script>
@@ -58,6 +78,9 @@
 <!-- 点击上传后对file进行判断，获取url地址 -->
 <script type="text/javascript" src="js/UploadAndLoaders.js"></script>
 <!--使用gltf模型文件进行展示绘制-->
+<!--obj2gltf函数-->
+<script type="text/javascript" src="js/conversion/obj2gltf.js"></script>
+
 <script type="text/javascript" src="js/gltfShow.js"></script>
 <!--使用obj模型文件进行展示绘制-->
 <script type="text/javascript" src="js/objShow.js"></script>

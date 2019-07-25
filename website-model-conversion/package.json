@@ -1,0 +1,7 @@
+{
+  "name": "website-model-conversion",
+  "version": "0.1.0",
+  "dependencies": {
+    "obj2gltf": "^3.0.4"
+  }
+}
