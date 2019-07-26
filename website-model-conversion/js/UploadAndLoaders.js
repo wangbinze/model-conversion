@@ -29,6 +29,7 @@ function onUpload(file) {
 		// myObj2Gltf(url);
 		//调用objShow
 		objShow(url);
+		aaa(url)
 		console.log('11')
 	} else if (file.name.slice(-4) == '.dae') {
 		daeShow(url);
