@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2986097a-10f3-4266-b45d-02c58fcbde48" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website-model-conversion/main_page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/website-model-conversion/main_page1.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vue-model-conversion/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="300">
+              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#4141#6721#0" />
@@ -289,21 +288,7 @@
       <workItem from="1564019192119" duration="3764000" />
       <workItem from="1564023189151" duration="3715000" />
       <workItem from="1564027844502" duration="19620000" />
-      <workItem from="1564106115380" duration="29435000" />
-    </task>
-    <task id="LOCAL-00042" summary="0">
-      <created>1563786342558</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1563786342558</updated>
-    </task>
-    <task id="LOCAL-00043" summary="0">
-      <created>1563790818989</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1563790818989</updated>
+      <workItem from="1564106115380" duration="29470000" />
     </task>
     <task id="LOCAL-00044" summary="0">
       <created>1563872961018</created>
@@ -634,11 +619,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564139576642</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="0">
+      <created>1564142928793</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1564142928793</updated>
+    </task>
+    <task id="LOCAL-00092" summary="0">
+      <created>1564142939279</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1564142939279</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199631000" />
+    <option name="totallyTimeSpent" value="199666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1057" extended-state="0" />
@@ -711,13 +710,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/website-model-conversion/main_page1.html</url>
-          <line>218</line>
+          <line>217</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/website-model-conversion/main_page1.html</url>
-          <line>162</line>
+          <line>161</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -1004,8 +1003,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="300">
+          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#4141#6721#0" />
