@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de60a12c-62cf-49c9-964b-a3f3eec7acd3" name="Default Changelist" comment="0" />
+    <list default="true" id="2986097a-10f3-4266-b45d-02c58fcbde48" name="Default Changelist" comment="0">
+      <change afterPath="$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js" beforeDir="false" afterPath="$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website-model-conversion/main_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/website-model-conversion/main_page.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/vue-model-conversion/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,20 +19,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="600">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website-model-conversion/js/objShow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -37,9 +60,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue Single File Component" />
+        <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>css</find>
+      <find>app</find>
+      <find>THREE</find>
+      <find>.el-upload-dragger</find>
+      <find>lastIndexOf</find>
+      <find>MTLLoader</find>
+      <find>action</find>
+      <find>loadedMesh</find>
+      <find>fs</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Three</replace>
+      <replace>three</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,29 +90,67 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/demo2-origin/src/views/List.vue" />
+        <option value="$PROJECT_DIR$/demo2-origin/src/views/User.vue" />
+        <option value="$PROJECT_DIR$/demo2-origin/src/views/Add.vue" />
+        <option value="$PROJECT_DIR$/demo2-origin/src/views/Info.vue" />
+        <option value="$PROJECT_DIR$/demo2-origin/src/router.js" />
+        <option value="$PROJECT_DIR$/demo2-origin/src/App.vue" />
+        <option value="$PROJECT_DIR$/demo2-origin/src/views/Home.vue" />
+        <option value="$PROJECT_DIR$/demo2-origin/src/views/Login.vue" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/views/Info.vue" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/views/Home.vue" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/router.js" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/js/three.js" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/js/index.js" />
+        <option value="$PROJECT_DIR$/Written by JS/App/page.html" />
+        <option value="$PROJECT_DIR$/website-model-conversion/App/index.html" />
+        <option value="$PROJECT_DIR$/test/node_modules/@vue/cli-service/lib/commands/serve.js" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/README.md" />
+        <option value="$PROJECT_DIR$/test/src/components/HelloWorld.vue" />
         <option value="$PROJECT_DIR$/vue-model-conversion/node_modules/@vue/cli-service/lib/commands/serve.js" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/views/About.vue" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/App.vue" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/public/index.html" />
         <option value="$PROJECT_DIR$/vue-model-conversion/src/main.js" />
+        <option value="$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails.vue" />
         <option value="$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails2.vue" />
         <option value="$PROJECT_DIR$/vue-model-conversion/src/views/Conversion.vue" />
-        <option value="$PROJECT_DIR$/vue-model-conversion/public/index.html" />
-        <option value="$PROJECT_DIR$/../1.html" />
-        <option value="$PROJECT_DIR$/vue-model-conversion/src/js/file.js" />
-        <option value="$PROJECT_DIR$/vue-model-conversion/src/assets/file.js" />
         <option value="$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails1.vue" />
-        <option value="$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetailsFile.vue" />
+        <option value="$PROJECT_DIR$/website-model-conversion/README.md" />
+        <option value="$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/第三方插件.md" />
+        <option value="$PROJECT_DIR$/website-model-conversion/css/upload.css" />
+        <option value="$PROJECT_DIR$/website-model-conversion/css/container.css" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/upload-gltf.js" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/gltfShow.js" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/objShow.js" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/daeShow.js" />
+        <option value="$PROJECT_DIR$/../3d展示 - 副本/JS/index.js" />
+        <option value="$PROJECT_DIR$/website-model-conversion/package-lock.json" />
+        <option value="$PROJECT_DIR$/website-model-conversion/package.json" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/conversion/obj2gltf.js" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/conversion/myObj2Gltf.js" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js" />
+        <option value="$PROJECT_DIR$/website-model-conversion/main_page.html" />
+        <option value="$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1272" />
-    <option name="width" value="1297" />
-    <option name="height" value="1410" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -92,20 +173,24 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3d展示 - 副本" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="F:\WebStorm 2018.3.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\软件文件夹\WebStorm 2018.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Wangbinze\Desktop\model-conversion\vue-model-conversion\src\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Wangbinze\Desktop\model-conversion\vue-model-conversion\src\components" />
+      <recent name="C:\Users\Paramland_05\Desktop\model-conversion\website-model-conversion" />
+      <recent name="C:\Users\Paramland_05\Desktop\model-conversion\website-model-conversion\js" />
+      <recent name="C:\Users\Paramland_05\Desktop\model-conversion\website-model-conversion\ThirdPartyPlugin" />
+      <recent name="C:\Users\Paramland_05\Desktop\model-conversion\website-model-conversion\three" />
+      <recent name="C:\Users\Paramland_05\Desktop\model-conversion\website-model-conversion\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,69 +210,440 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="de60a12c-62cf-49c9-964b-a3f3eec7acd3" name="Default Changelist" comment="" />
-      <created>1563894097895</created>
+      <changelist id="2986097a-10f3-4266-b45d-02c58fcbde48" name="Default Changelist" comment="" />
+      <created>1560910765096</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1563894097895</updated>
-      <workItem from="1563894137474" duration="4812000" />
-      <workItem from="1563974676502" duration="9705000" />
-      <workItem from="1564059102201" duration="3135000" />
+      <updated>1560910765096</updated>
+      <workItem from="1560910767371" duration="11891000" />
+      <workItem from="1561615983954" duration="4227000" />
+      <workItem from="1561687448987" duration="11000" />
+      <workItem from="1561688053419" duration="9582000" />
+      <workItem from="1561946497420" duration="7749000" />
+      <workItem from="1562138706752" duration="599000" />
+      <workItem from="1562204735625" duration="25194000" />
+      <workItem from="1562292399085" duration="3888000" />
+      <workItem from="1562297107918" duration="5558000" />
+      <workItem from="1562561294270" duration="3848000" />
+      <workItem from="1562641018774" duration="3185000" />
+      <workItem from="1562739838886" duration="611000" />
+      <workItem from="1562810654582" duration="5562000" />
+      <workItem from="1563156803824" duration="2723000" />
+      <workItem from="1563177023500" duration="1202000" />
+      <workItem from="1563762050608" duration="15565000" />
+      <workItem from="1563846774607" duration="676000" />
+      <workItem from="1563859457262" duration="9121000" />
+      <workItem from="1563932916275" duration="31905000" />
+      <workItem from="1564019192119" duration="3764000" />
+      <workItem from="1564023189151" duration="3715000" />
+      <workItem from="1564027844502" duration="19620000" />
+      <workItem from="1564106115380" duration="11351000" />
     </task>
-    <task id="LOCAL-00001" summary="0">
-      <created>1563895587180</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00037" summary="123">
+      <created>1563765839672</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1563895587180</updated>
+      <updated>1563765839672</updated>
     </task>
-    <task id="LOCAL-00002" summary="0">
-      <created>1563899299826</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00038" summary="修改描述文字">
+      <created>1563766539486</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
       <option name="project" value="LOCAL" />
-      <updated>1563899299826</updated>
+      <updated>1563766539486</updated>
     </task>
-    <task id="LOCAL-00003" summary="0">
-      <created>1563983812859</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00039" summary="修改注释">
+      <created>1563767295797</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1563983812859</updated>
+      <updated>1563767295797</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00040" summary="0">
+      <created>1563771719825</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1563771719825</updated>
+    </task>
+    <task id="LOCAL-00041" summary="0">
+      <created>1563780276797</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1563780276797</updated>
+    </task>
+    <task id="LOCAL-00042" summary="0">
+      <created>1563786342558</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1563786342558</updated>
+    </task>
+    <task id="LOCAL-00043" summary="0">
+      <created>1563790818989</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1563790818989</updated>
+    </task>
+    <task id="LOCAL-00044" summary="0">
+      <created>1563872961018</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1563872961018</updated>
+    </task>
+    <task id="LOCAL-00045" summary="0">
+      <created>1563873155494</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1563873155494</updated>
+    </task>
+    <task id="LOCAL-00046" summary="0">
+      <created>1563873186858</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1563873186858</updated>
+    </task>
+    <task id="LOCAL-00047" summary="0">
+      <created>1563876715372</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1563876715372</updated>
+    </task>
+    <task id="LOCAL-00048" summary="0">
+      <created>1563878461062</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1563878461062</updated>
+    </task>
+    <task id="LOCAL-00049" summary="0">
+      <created>1563880747759</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1563880747759</updated>
+    </task>
+    <task id="LOCAL-00050" summary="0">
+      <created>1563880762266</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1563880762266</updated>
+    </task>
+    <task id="LOCAL-00051" summary="0">
+      <created>1563933309635</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1563933309635</updated>
+    </task>
+    <task id="LOCAL-00052" summary="0">
+      <created>1563952187210</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1563952187210</updated>
+    </task>
+    <task id="LOCAL-00053" summary="0">
+      <created>1563953865486</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1563953865486</updated>
+    </task>
+    <task id="LOCAL-00054" summary="0">
+      <created>1563966362181</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1563966362181</updated>
+    </task>
+    <task id="LOCAL-00055" summary="0">
+      <created>1563968477251</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1563968477251</updated>
+    </task>
+    <task id="LOCAL-00056" summary="新建">
+      <created>1564023359570</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023359571</updated>
+    </task>
+    <task id="LOCAL-00057" summary="新建">
+      <created>1564023431151</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023431151</updated>
+    </task>
+    <task id="LOCAL-00058" summary="新增">
+      <created>1564023521885</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023521885</updated>
+    </task>
+    <task id="LOCAL-00059" summary="新增">
+      <created>1564023528182</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023528182</updated>
+    </task>
+    <task id="LOCAL-00060" summary="新增">
+      <created>1564023565836</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023565836</updated>
+    </task>
+    <task id="LOCAL-00061" summary="新增">
+      <created>1564023592083</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023592083</updated>
+    </task>
+    <task id="LOCAL-00062" summary="新增">
+      <created>1564023605043</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023605043</updated>
+    </task>
+    <task id="LOCAL-00063" summary="新增">
+      <created>1564023627934</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023627934</updated>
+    </task>
+    <task id="LOCAL-00064" summary="新增">
+      <created>1564023665305</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023665305</updated>
+    </task>
+    <task id="LOCAL-00065" summary="新增">
+      <created>1564023869536</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023869536</updated>
+    </task>
+    <task id="LOCAL-00066" summary="新增">
+      <created>1564023909178</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023909178</updated>
+    </task>
+    <task id="LOCAL-00067" summary="新增">
+      <created>1564023937517</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023937517</updated>
+    </task>
+    <task id="LOCAL-00068" summary="新增">
+      <created>1564023963310</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023963310</updated>
+    </task>
+    <task id="LOCAL-00069" summary="新增">
+      <created>1564023979790</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023979790</updated>
+    </task>
+    <task id="LOCAL-00070" summary="新增">
+      <created>1564023991831</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1564023991831</updated>
+    </task>
+    <task id="LOCAL-00071" summary="新增">
+      <created>1564025259732</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025259732</updated>
+    </task>
+    <task id="LOCAL-00072" summary="新增">
+      <created>1564025266574</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025266574</updated>
+    </task>
+    <task id="LOCAL-00073" summary="新增">
+      <created>1564025307711</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025307711</updated>
+    </task>
+    <task id="LOCAL-00074" summary="新增">
+      <created>1564025319404</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025319404</updated>
+    </task>
+    <task id="LOCAL-00075" summary="新增">
+      <created>1564025333591</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025333591</updated>
+    </task>
+    <task id="LOCAL-00076" summary="新增">
+      <created>1564025347347</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025347347</updated>
+    </task>
+    <task id="LOCAL-00077" summary="新增">
+      <created>1564025355795</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025355795</updated>
+    </task>
+    <task id="LOCAL-00078" summary="新增">
+      <created>1564025608927</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1564025608927</updated>
+    </task>
+    <task id="LOCAL-00079" summary="0">
+      <created>1564027651706</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1564027651706</updated>
+    </task>
+    <task id="LOCAL-00080" summary="0">
+      <created>1564027674424</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1564027674424</updated>
+    </task>
+    <task id="LOCAL-00081" summary="0">
+      <created>1564042109135</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1564042109136</updated>
+    </task>
+    <task id="LOCAL-00082" summary="0">
+      <created>1564049684219</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1564049684219</updated>
+    </task>
+    <task id="LOCAL-00083" summary="0">
+      <created>1564050973799</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1564050973799</updated>
+    </task>
+    <task id="LOCAL-00084" summary="0">
+      <created>1564053122401</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1564053122401</updated>
+    </task>
+    <task id="LOCAL-00085" summary="0">
+      <created>1564106872500</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1564106872501</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17652000" />
+    <option name="totallyTimeSpent" value="181547000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1018" y="0" width="1037" height="1128" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30869132" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19978632" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.29116467" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20151679" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16452992" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20801733" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="2" />
+    <MESSAGE value="修改xmind文件" />
+    <MESSAGE value="123" />
+    <MESSAGE value="修改描述文字" />
+    <MESSAGE value="修改注释" />
+    <MESSAGE value="新建" />
+    <MESSAGE value="新增" />
     <MESSAGE value="0" />
     <option name="LAST_COMMIT_MESSAGE" value="0" />
   </component>
@@ -195,57 +651,87 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetailsFile.vue</url>
-          <line>75</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetailsFile.vue</url>
-          <line>139</line>
+          <url>file://$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js</url>
+          <line>18</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/README.md">
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/js/three.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="25197" column="6" selection-start-line="25197" selection-start-column="6" selection-end-line="25197" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/element-ui/lib/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="537" lean-forward="true" selection-start-line="537" selection-end-line="537" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/three-orbitcontrols/OrbitControls.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/js文件.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/three/examples/jsm/loaders/GLTFLoader.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/loaders/ctm/CTMLoader.js" />
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <first_editor relative-caret-position="180">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/@vue/cli-service/lib/Service.js">
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171" />
+        <state relative-caret-position="-3028" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/@vue/cli-service/lib/commands/serve.js">
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/assets/file.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="800">
+          <caret line="40" column="25" lean-forward="true" selection-end-line="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/babel.config.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/WebGL.js" />
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#387#435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails2.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        <state relative-caret-position="340">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
           <folding>
             <element signature="e#603#633#0" expanded="true" />
             <element signature="e#845#910#0" expanded="true" />
@@ -253,130 +739,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../1.html">
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails1.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="101" column="18" lean-forward="true" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
+        <state relative-caret-position="752">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/vue/types/vue.d.ts">
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/three/build/three.module.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/three/three.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/three/three.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/ThreeJsPlugin/vr/WebVR.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/第三方插件.md">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <folding>
-            <element signature="e#0#321#0" expanded="true" />
-          </folding>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/项目文件夹/公司主站相关文件/CompanyWebsite/App/homepage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2720" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-model-conversion/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="120">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="53" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/public/model.ico">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="80">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/vue/types/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/three/examples/jsm/loaders/GLTFLoader.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="15" lean-forward="true" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/webpack/bin/webpack.js">
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/css/css文件.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/webpack/LICENSE">
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/css/container.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/three/examples/jsm/loaders/deprecated/LegacyGLTFLoader.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/node_modules/webpack/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/views/Conversion.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#387#435#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails1.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/assets/file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetailsFile.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+        <state relative-caret-position="292">
+          <caret line="278" column="22" lean-forward="true" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/ThreeJsPlugin/loaders/OBJLoader.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/ThreeJsPlugin/loaders/OBJLoader2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/views/Conversion.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="8" selection-start-line="1" selection-start-column="2" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/gltfShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#gltfShow#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page.html">
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/ThreeJsPlugin/loaders/ColladaLoader.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3d展示 - 副本/ToGltf/dae/1.dae">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3d展示 - 副本/JS/1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/conversion/.editorconfig" />
+    <entry file="file://$PROJECT_DIR$/../3d展示 - 副本/JS/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-800">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3d展示 - 副本/App/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="10" selection-start-line="10" selection-end-line="11" />
+          <folding>
+            <element signature="n#style#0;n#figure#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3d展示 - 副本/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-model-conversion/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-254">
+          <caret line="15" column="14" lean-forward="true" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/资料文件夹/three.js-master/test/unit/example/exporters/GLTFExporter.tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1200">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/package.json" />
+    <entry file="file://$USER_HOME$/node_modules/obj2gltf/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/node_modules/obj2gltf/lib/obj2gltf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/daeShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/css/upload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/conversion/myObj2Gltf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/ThreeJsPlugin/exporters/GLTFExporter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/objShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
         </state>
       </provider>
     </entry>
