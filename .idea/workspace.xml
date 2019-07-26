@@ -13,26 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -61,8 +42,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1272" />
-    <option name="width" value="1297" />
+    <option name="x" value="1270" />
+    <option name="width" value="1299" />
     <option name="height" value="1410" />
   </component>
   <component name="ProjectView">
@@ -81,12 +62,6 @@
               <item name="model-conversion" type="b2602c69:ProjectViewProjectNode" />
               <item name="model-conversion" type="462c0819:PsiDirectoryNode" />
               <item name="website-model-conversion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="model-conversion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="model-conversion" type="462c0819:PsiDirectoryNode" />
-              <item name="website-model-conversion" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -133,6 +108,7 @@
       <workItem from="1563894137474" duration="4812000" />
       <workItem from="1563974676502" duration="9705000" />
       <workItem from="1564059102201" duration="3135000" />
+      <workItem from="1564070496873" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1563895587180</created>
@@ -159,12 +135,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17652000" />
+    <option name="totallyTimeSpent" value="17670000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1018" y="0" width="1037" height="1128" extended-state="0" />
+    <frame x="1017" y="0" width="1038" height="1128" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30869132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30838323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -366,17 +342,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/UploadAndLoaders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
