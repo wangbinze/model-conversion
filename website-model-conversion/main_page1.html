@@ -10,6 +10,7 @@
 			/*background-color: #000;*/
 			margin: 0px;
 			overflow: hidden;
+			text-align:center;
 		}
 		#info {
 			color: #cc2927;
@@ -18,7 +19,11 @@
 			top: 0px; width: 100%;
 			padding: 5px;
 		}
+		#file_uploads {
+			display: none;
+		}
 	</style>
+	<link rel="stylesheet" href="./css/upload.css">
 </head>
 <body>
 
@@ -43,8 +48,8 @@
 		</form>
 	</div>
 	<br>
-	<button id="export_scene">Export Scene1</button>
-	<button id="export_obj">Export inputModel</button>
+	<button id="export_scene">导出场景</button>
+	<button id="export_obj">导出添加的三维模型</button>
 	<br/><br/>
 	<label><input id="option_binary" name="visible" type="checkbox">Binary (<code>.glb</code>)</label>
 </div>
@@ -362,6 +367,11 @@
 			url,
 			function (collada ) {
 				elf = collada.scene;
+				inputModel = collada;
+				scene1.add( inputModel );
+
+				//设置位置
+				elf.position.set(0, 0, -20)
 			},
 			function (xhr) {
 				console.log((xhr.loaded / xhr.total * 1) + '% loaded');

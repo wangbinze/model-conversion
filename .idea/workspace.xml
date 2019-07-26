@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2986097a-10f3-4266-b45d-02c58fcbde48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/website-model-conversion/robo-obj-pose4/source/d2f0cff60afc40f5afe79156ec7db657.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website-model-conversion/robo-obj-pose4/textures/6bf488141a8a487599953582478eca36.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website-model-conversion/robo-obj-pose4/textures/98a91fc2e52c4db6a4be147a471e98ca.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website-model-conversion/robo-obj-pose4/textures/LP_BodyNormalsMap_1K.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/website-model-conversion/robo-obj-pose4/textures/Texture_1K.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website-model-conversion/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/website-model-conversion/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website-model-conversion/css/upload.css" beforeDir="false" afterPath="$PROJECT_DIR$/website-model-conversion/css/upload.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website-model-conversion/main_page1.html" beforeDir="false" afterPath="$PROJECT_DIR$/website-model-conversion/main_page1.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/vue-model-conversion/node_modules/" />
@@ -20,13 +17,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="6">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page1.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="579">
+                    <caret line="292" column="31" lean-forward="true" selection-start-line="290" selection-start-column="6" selection-end-line="292" selection-end-column="31" />
+                    <folding>
+                      <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="370" column="8" lean-forward="true" selection-start-line="370" selection-start-column="8" selection-end-line="370" selection-end-column="8" />
+            <state relative-caret-position="220">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="e#4141#6721#0" />
@@ -36,18 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website-model-conversion/js/objShow.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website-model-conversion/css/upload.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-              <folding>
-                <element signature="n#!!block;n#initRender#0;n#!!block;n#objShow#0" />
-                <element signature="n#!!block;n#initControls#0;n#!!block;n#objShow#0" />
-                <element signature="n#!!block;n#render#0;n#!!block;n#objShow#0" />
-                <element signature="n#!!block;n#onWindowResize#0;n#!!block;n#objShow#0" />
-                <element signature="n#!!block;n#animate#0;n#!!block;n#objShow#0" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -55,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
+            <state relative-caret-position="400">
               <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
             </state>
           </provider>
@@ -66,6 +78,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
               <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -102,6 +123,8 @@
       <find>camera</find>
       <find>checked</find>
       <find>waltHead</find>
+      <find>position</find>
+      <find>set</find>
       <find>saveString</find>
       <find>multiplyScalar</find>
     </findStrings>
@@ -145,9 +168,7 @@
         <option value="$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails2.vue" />
         <option value="$PROJECT_DIR$/vue-model-conversion/src/views/Conversion.vue" />
         <option value="$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails1.vue" />
-        <option value="$PROJECT_DIR$/website-model-conversion/README.md" />
         <option value="$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/第三方插件.md" />
-        <option value="$PROJECT_DIR$/website-model-conversion/css/upload.css" />
         <option value="$PROJECT_DIR$/website-model-conversion/css/container.css" />
         <option value="$PROJECT_DIR$/website-model-conversion/js/upload-gltf.js" />
         <option value="$PROJECT_DIR$/website-model-conversion/js/gltfShow.js" />
@@ -161,7 +182,9 @@
         <option value="$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js" />
         <option value="$PROJECT_DIR$/website-model-conversion/js/objShow.js" />
         <option value="$PROJECT_DIR$/website-model-conversion/main_page.html" />
+        <option value="$PROJECT_DIR$/website-model-conversion/README.md" />
         <option value="$PROJECT_DIR$/website-model-conversion/main_page1.html" />
+        <option value="$PROJECT_DIR$/website-model-conversion/css/upload.css" />
       </list>
     </option>
   </component>
@@ -190,6 +213,12 @@
               <item name="model-conversion" type="b2602c69:ProjectViewProjectNode" />
               <item name="model-conversion" type="462c0819:PsiDirectoryNode" />
               <item name="website-model-conversion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="model-conversion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="model-conversion" type="462c0819:PsiDirectoryNode" />
+              <item name="website-model-conversion" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="model-conversion" type="b2602c69:ProjectViewProjectNode" />
@@ -278,14 +307,7 @@
       <workItem from="1564019192119" duration="3764000" />
       <workItem from="1564023189151" duration="3715000" />
       <workItem from="1564027844502" duration="19620000" />
-      <workItem from="1564106115380" duration="25055000" />
-    </task>
-    <task id="LOCAL-00039" summary="修改注释">
-      <created>1563767295797</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1563767295797</updated>
+      <workItem from="1564106115380" duration="27468000" />
     </task>
     <task id="LOCAL-00040" summary="0">
       <created>1563771719825</created>
@@ -623,11 +645,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564129963857</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="成功加载gltf，obj，dae模型">
+      <created>1564136502064</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1564136502064</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195251000" />
+    <option name="totallyTimeSpent" value="197664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1057" extended-state="0" />
@@ -686,7 +715,8 @@
     <MESSAGE value="新建" />
     <MESSAGE value="新增" />
     <MESSAGE value="0" />
-    <option name="LAST_COMMIT_MESSAGE" value="0" />
+    <MESSAGE value="成功加载gltf，obj，dae模型" />
+    <option name="LAST_COMMIT_MESSAGE" value="成功加载gltf，obj，dae模型" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -698,13 +728,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/website-model-conversion/main_page1.html</url>
-          <line>212</line>
+          <line>217</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/website-model-conversion/main_page1.html</url>
-          <line>156</line>
+          <line>161</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
@@ -712,7 +742,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/website-model-conversion/ThirdPartyPlugin/WebGL.js" />
     <entry file="file://$PROJECT_DIR$/vue-model-conversion/src/components/ConversionDetails.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -883,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website-model-conversion/css/upload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website-model-conversion/js/conversion/myObj2Gltf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -915,27 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="3191" column="4" selection-start-line="3191" selection-start-column="4" selection-end-line="3191" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/objShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!block;n#initRender#0;n#!!block;n#objShow#0" />
-            <element signature="n#!!block;n#initControls#0;n#!!block;n#objShow#0" />
-            <element signature="n#!!block;n#render#0;n#!!block;n#objShow#0" />
-            <element signature="n#!!block;n#onWindowResize#0;n#!!block;n#objShow#0" />
-            <element signature="n#!!block;n#animate#0;n#!!block;n#objShow#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -980,22 +981,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="280">
+            <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/objShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-764">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="280">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/js/export_obj2gltf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website-model-conversion/main_page1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="370" column="8" lean-forward="true" selection-start-line="370" selection-start-column="8" selection-end-line="370" selection-end-column="8" />
+        <state relative-caret-position="220">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#4141#6721#0" />
             <element signature="e#6747#9251#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website-model-conversion/css/upload.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
