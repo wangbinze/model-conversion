@@ -22,7 +22,7 @@ form label, form button {
   padding: 5px 10px;
   border-radius: 5px;
   border: 1px ridge black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   height: auto;
 }
 form label:hover, form button:hover {

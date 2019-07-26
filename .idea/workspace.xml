@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de60a12c-62cf-49c9-964b-a3f3eec7acd3" name="Default Changelist" comment="0" />
+    <list default="true" id="de60a12c-62cf-49c9-964b-a3f3eec7acd3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/vue-model-conversion/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,11 +57,6 @@
             <path>
               <item name="model-conversion" type="b2602c69:ProjectViewProjectNode" />
               <item name="model-conversion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="model-conversion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="model-conversion" type="462c0819:PsiDirectoryNode" />
-              <item name="website-model-conversion" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -109,6 +104,7 @@
       <workItem from="1563974676502" duration="9705000" />
       <workItem from="1564059102201" duration="3135000" />
       <workItem from="1564070496873" duration="18000" />
+      <workItem from="1564148664243" duration="796000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1563895587180</created>
@@ -131,16 +127,23 @@
       <option name="project" value="LOCAL" />
       <updated>1563983812859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="0">
+      <created>1564148781759</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564148781759</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17670000" />
+    <option name="totallyTimeSpent" value="18466000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1017" y="0" width="1038" height="1128" extended-state="0" />
+    <frame x="1016" y="0" width="1039" height="1128" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30838323" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3080758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

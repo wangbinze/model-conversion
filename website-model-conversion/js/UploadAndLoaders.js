@@ -1,6 +1,5 @@
 
 
-
 function onUpload(file) {
 	// 获取文件名
 	var file1 = document.getElementById("file_uploads");
@@ -27,13 +26,10 @@ function onUpload(file) {
 	} else if (file.name.slice(-4) == '.obj') {
 		//调用模型转换函数
 		//obj2gltf
-		myObj2Gltf(url);
-
-
-
-
+		// myObj2Gltf(url);
 		//调用objShow
-		// objShow(url);
+		objShow(url);
+		aaa(url)
 		console.log('11')
 	} else if (file.name.slice(-4) == '.dae') {
 		daeShow(url);

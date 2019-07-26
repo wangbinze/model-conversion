@@ -53,8 +53,12 @@
 
 		<br>
 		<input type="text" disabled="disable" value="文件名" id="fileName">
+		<br>
+		<br>
 	</form>
 </div>
+<button id="export_obj2gltf">导出GLTF文件</button>
+
 <div id="container"></div>
 </body>
 <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
@@ -71,6 +75,10 @@
 <script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/ColladaLoader.js"></script>
 
 
+
+
+
+
 <script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/controls/OrbitControls.js"></script>
 <script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/DRACOLoader.js"></script>
 
@@ -79,12 +87,20 @@
 <script type="text/javascript" src="js/UploadAndLoaders.js"></script>
 <!--使用gltf模型文件进行展示绘制-->
 <!--obj2gltf函数-->
-<script type="text/javascript" src="js/conversion/myObj2Gltf.js"></script>
+<!--<script type="text/javascript" src="js/conversion/myObj2Gltf.js"></script>-->
+
+
 
 <script type="text/javascript" src="js/gltfShow.js"></script>
 <!--使用obj模型文件进行展示绘制-->
 <script type="text/javascript" src="js/objShow.js"></script>
 <!--使用dae模型文件进行展示绘制-->
 <script type="text/javascript" src="js/daeShow.js"></script>
+
+
+<!--exporter导出器-->
+<!--GLTFExporter-->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/exporters/GLTFExporter.js"></script>
+<script type="text/javascript" src="./js/export_obj2gltf.js"></script>
 
 </html>
