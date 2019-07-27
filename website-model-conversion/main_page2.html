@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>three.js webgl - exporter - gltf</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="icon" href="images/model.ico">
+	<style>
+		body {
+			font-family: Monospace;
+			/*background-color: #000;*/
+			margin: 0px;
+			overflow: hidden;
+			text-align:center;
+		}
+		#info {
+			color: #3340cc;
+			text-align: center;
+			position: absolute;
+			top: 0px; width: 100%;
+			padding: 5px;
+		}
+		#file_uploads {
+			display: none;
+		}
+	</style>
+	<link rel="stylesheet" href="./css/upload.css">
+	<link rel="stylesheet" href="./css/DragAndDrop.css">
+</head>
+<body>
+
+<div id="info">
+	 <h1>重庆数地景观</h1>
+	<div class="description">
+		<P>您可以通过本页面对你的3D模型进行<b>在线查看</b>和<b>转换</b>，<b>不需要</b>任何第三方软件</P>
+		<p>所有转换都发生在您的电脑上，任何模型或文本都不会上传到我们的服务器或以任何方式存储。</p>
+	</div>
+	<div class="uploadebutton">
+		<form>
+			<div>
+				<label for="file_uploads">选择你要查看的模型文件(glTF/dae/obj)</label>
+				<br>
+				<input type="file"
+				       id="file_uploads"
+				       name="file_uploads"
+				       onchange="onUpload(this.files[0])"
+				       accept="" multiple
+        >
+			</div>
+		</form>
+	</div>
+
+
+	<input type="file" id="fileInput" allowdirs multiple />
+	<div>
+	</div>
+
+
+	<!--拖拽上传-->
+	<div id="dropDiv">拖拽 &amp; 把文件放到这里！</div>
+	<div>
+	</div>
+
+	<h3>Output</h3>
+	<pre id="console"></pre>
+
+
+	<br>
+	<button id="export_scene">导出场景</button>
+	<button id="export_obj">导出添加的三维模型</button>
+	<br/><br/>
+	<label><input id="option_binary" name="visible" type="checkbox">GLB是glTF2.0文件格式的二进制版本(<code>.glb</code>)</label>
+</div>
+
+
+<!--拖拽上传插件-->
+<script type="text/javascript" src="./js/dragAndDrop/polyfill.js"></script>
+<script type="text/javascript" src="./js/dragAndDrop/DragAndDrop.js"></script>
+
+<!-- 加载loaders JS文件 -->
+<script type="text/javascript" src="./three/three.js"></script>
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/WebGL.js"></script>
+<!-- GLTF加载器 -->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/GLTFLoader.js"></script>
+<!--obj加载器-->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/OBJLoader.js"></script>
+<!--dae加载器-->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/ColladaLoader.js"></script>
+
+<!--gltf导出器-->
+<script src="./ThirdPartyPlugin/ThreeJsPlugin/exporters/GLTFExporter.js"></script>
+
+<!--控制器-->
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/controls/OrbitControls.js"></script>
+<script type="text/javascript" src="./ThirdPartyPlugin/ThreeJsPlugin/loaders/DRACOLoader.js"></script>
+
+<script>
+
+
+	function exportGLTF( input ) {
+
+		var gltfExporter = new THREE.GLTFExporter();
+
+
+		//选择导出glb还是gltf
+		var options = {
+			binary: document.getElementById( 'option_binary' ).checked,
+		};
+		gltfExporter.parse( input, function ( result ) {
+			if ( result instanceof ArrayBuffer ) {
+				saveArrayBuffer( result, 'scene.glb' );
+			} else {
+				var output = JSON.stringify( result, null, 2 );
+				console.log( output );
+				saveString( output, 'scene.gltf' );
+			}
+		} ,options);
+	}
+
+	document.getElementById( 'export_scene' ).addEventListener( 'click', function () {
+		exportGLTF( scene1 );
+	} );
+
+	document.getElementById( 'export_obj' ).addEventListener( 'click', function () {
+		exportGLTF( inputModel );
+	} );
+
+
+	var link = document.createElement( 'a' );
+	link.style.display = 'none';
+	document.body.appendChild( link ); // Firefox workaround, see #6594
+
+	function save( blob, filename ) {
+		link.href = URL.createObjectURL( blob );
+		link.download = filename;
+		link.click();
+	}
+
+	function saveString( text, filename ) {
+		save( new Blob( [ text ], { type: 'text/plain' } ), filename );
+	}
+
+
+	function saveArrayBuffer( buffer, filename ) {
+		save( new Blob( [ buffer ], { type: 'application/octet-stream' } ), filename );
+	}
+
+	if ( WEBGL.isWebGLAvailable() === false ) {
+		document.body.appendChild( WEBGL.getWebGLErrorMessage() );
+	}
+
+	var container;
+
+	var camera, scene1,  renderer, controls, elf;
+	var inputModel;
+
+
+	// ---------------------------------------------------------------------
+	//文件上传按钮
+	// ---------------------------------------------------------------------
+	function onUpload(file) {
+
+		// 文件转化成二进制文件
+		var blob = new Blob([file]),
+		//转化成url
+		url = URL.createObjectURL(blob);
+		console.log(url);
+
+		//对文件进行判断
+		console.log(file);
+		console.log(file.name)
+		console.log(file.name.slice(-4));
+		//判断上传的file文件是何种格式--gltf/obj/osgb/dae
+
+		if (file.name.slice(-4) == 'gltf'){
+			initGltf(url);
+			animate();
+			console.log('成功显示gltf文件');
+		} else if (file.name.slice(-4) == '.obj') {
+			initObj(url);
+			animate();
+			console.log('成功显示obj文件')
+		} else if (file.name.slice(-4) == '.dae') {
+			initDae(url);
+			animate();
+			console.log('成功显示dae文件')
+		} else {
+			alert('请上传正确的文件')
+		}
+	}
+
+
+	function initGltf(url) {
+		container = document.createElement( 'div' );
+		document.body.appendChild( container );
+
+		scene1 = new THREE.Scene();
+		scene1.name = 'Scene1';
+
+		// ---------------------------------------------------------------------
+		// Perspective Camera
+		// ---------------------------------------------------------------------
+		camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+		camera.position.set( 600, 400, 0 );
+
+		camera.name = "PerspectiveCamera";
+		scene1.add( camera );
+
+		// ---------------------------------------------------------------------
+		// Ambient light  环境光
+		// ---------------------------------------------------------------------
+		var light = new THREE.AmbientLight( 0xffffff, 0.1 );
+		light.name = 'AmbientLight';
+		scene1.add( light );
+
+		// ---------------------------------------------------------------------
+		// DirectLight  直射光
+		// ---------------------------------------------------------------------
+		light = new THREE.DirectionalLight( 0xffffff, 0.1 );
+		light.target.position.set( 0, 0, -1 );
+		light.add( light.target );
+		light.lookAt( -1, -1, 0 );
+		light.name = 'DirectionalLight';
+		scene1.add( light );
+
+
+		// ---------------------------------------------------------------------
+		//加载gltf格式的模型
+		var gltfloader = new THREE.GLTFLoader();
+		gltfloader.setDRACOLoader(new THREE.DRACOLoader());
+		gltfloader.load(
+			url,
+			function (gltf) {
+				scene1.add(gltf.scene);
+			},
+			function (xhr) {
+				console.log((xhr.loaded / xhr.total * 1) + '% loaded');
+			},
+			function (error) {
+				console.log(error);
+			},
+		);
+
+
+
+		// ---------------------------------------------------------------------
+		renderer = new THREE.WebGLRenderer( { antialias: true } );
+		renderer.setPixelRatio( window.devicePixelRatio );
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		//设置背景颜色
+		renderer.setClearColor(0xffffff);
+		container.appendChild( renderer.domElement );
+		window.addEventListener( 'resize', onWindowResize, false );
+
+		// ---------------------------------------------------------------------
+		//鼠标操作模型操作
+		// ---------------------------------------------------------------------
+		controls = new THREE.OrbitControls(camera, renderer.domElement);
+		// 使动画循环使用时阻尼或自转 意思是否有惯性
+		controls.enableDamping = true;
+		//动态阻尼系数 就是鼠标拖拽旋转灵敏度
+		controls.dampingFactor = 0.55;
+		//是否可以缩放
+		controls.enableZoom = true;
+		//是否自动旋转
+		controls.autoRotate = false;
+		//设置相机距离原点的最远距离
+		controls.minDistance = 1;
+		//设置相机距离原点的最远距离
+		controls.maxDistance = 200;
+		//是否开启右键拖拽
+		controls.enablePan = true;
+	}
+
+	function initObj(url) {
+		container = document.createElement( 'div' );
+		document.body.appendChild( container );
+
+		scene1 = new THREE.Scene();
+		scene1.name = 'Scene1';
+
+		// ---------------------------------------------------------------------
+		// Perspective Camera
+		// ---------------------------------------------------------------------
+		camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+		camera.position.set( 600, 400, 0 );
+
+		camera.name = "PerspectiveCamera";
+		scene1.add( camera );
+
+		// ---------------------------------------------------------------------
+		// Ambient light  环境光
+		// ---------------------------------------------------------------------
+		var light = new THREE.AmbientLight( 0xffffff, 0.1 );
+		light.name = 'AmbientLight';
+		scene1.add( light );
+
+		// ---------------------------------------------------------------------
+		// DirectLight  直射光
+		// ---------------------------------------------------------------------
+		light = new THREE.DirectionalLight( 0xffffff, 0.1 );
+		light.target.position.set( 0, 0, -1 );
+		light.add( light.target );
+		light.lookAt( -1, -1, 0 );
+		light.name = 'DirectionalLight';
+		scene1.add( light );
+
+		// ---------------------------------------------------------------------
+		// 导入obj文件
+		// ---------------------------------------------------------------------
+		var loader = new THREE.OBJLoader();
+		loader.load( url, function ( obj ) {
+			inputModel = obj;
+			inputModel.scale.multiplyScalar( 1.5 );
+			scene1.add( inputModel );
+		} );
+
+		// ---------------------------------------------------------------------
+		renderer = new THREE.WebGLRenderer( { antialias: true } );
+		renderer.setPixelRatio( window.devicePixelRatio );
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		//设置背景颜色
+		renderer.setClearColor(0xffffff);
+		container.appendChild( renderer.domElement );
+		window.addEventListener( 'resize', onWindowResize, false );
+
+		// ---------------------------------------------------------------------
+		//鼠标操作模型操作
+		// ---------------------------------------------------------------------
+		controls = new THREE.OrbitControls(camera, renderer.domElement);
+		// 使动画循环使用时阻尼或自转 意思是否有惯性
+		controls.enableDamping = true;
+		//动态阻尼系数 就是鼠标拖拽旋转灵敏度
+		controls.dampingFactor = 0.55;
+		//是否可以缩放
+		controls.enableZoom = true;
+		//是否自动旋转
+		controls.autoRotate = false;
+		//设置相机距离原点的最远距离
+		controls.minDistance = 1;
+		//设置相机距离原点的最远距离
+		controls.maxDistance = 200;
+		//是否开启右键拖拽
+		controls.enablePan = true;
+	}
+
+	function initDae(url) {
+		container = document.createElement( 'div' );
+		document.body.appendChild( container );
+
+		scene1 = new THREE.Scene();
+		scene1.name = 'Scene1';
+
+		// ---------------------------------------------------------------------
+		// Perspective Camera
+		// ---------------------------------------------------------------------
+		camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+		camera.position.set( 600, 400, 0 );
+
+		camera.name = "PerspectiveCamera";
+		scene1.add( camera );
+
+		// ---------------------------------------------------------------------
+		// Ambient light  环境光
+		// ---------------------------------------------------------------------
+		var light = new THREE.AmbientLight( 0xffffff, 0.1 );
+		light.name = 'AmbientLight';
+		scene1.add( light );
+
+		// ---------------------------------------------------------------------
+		// DirectLight  直射光
+		// ---------------------------------------------------------------------
+		light = new THREE.DirectionalLight( 0xffffff, 0.1 );
+		light.target.position.set( 0, 0, -1 );
+		light.add( light.target );
+		light.lookAt( -1, -1, 0 );
+		light.name = 'DirectionalLight';
+		scene1.add( light );
+
+
+		// ---------------------------------------------------------------------
+		//加载dae格式的模型
+		var loadingManager = new THREE.LoadingManager( function () {
+			scene1.add( elf );
+		} );
+
+		var daeLoader = new THREE.ColladaLoader(loadingManager);
+		daeLoader.load(
+			url,
+			function (collada ) {
+				elf = collada.scene;
+				inputModel = collada;
+				scene1.add( inputModel );
+
+				//设置位置
+				elf.position.set(0, 0, -20)
+			},
+			function (xhr) {
+				console.log((xhr.loaded / xhr.total * 1) + '% loaded');
+			},
+			function (error) {
+				console.log(error);
+			},
+		);
+
+
+
+		// ---------------------------------------------------------------------
+		renderer = new THREE.WebGLRenderer( { antialias: true } );
+		renderer.setPixelRatio( window.devicePixelRatio );
+		renderer.setSize( window.innerWidth, window.innerHeight );
+		//设置背景颜色
+		renderer.setClearColor(0xffffff);
+		container.appendChild( renderer.domElement );
+		window.addEventListener( 'resize', onWindowResize, false );
+
+		// ---------------------------------------------------------------------
+		//鼠标操作模型操作
+		// ---------------------------------------------------------------------
+		controls = new THREE.OrbitControls(camera, renderer.domElement);
+		// 使动画循环使用时阻尼或自转 意思是否有惯性
+		controls.enableDamping = true;
+		//动态阻尼系数 就是鼠标拖拽旋转灵敏度
+		controls.dampingFactor = 0.55;
+		//是否可以缩放
+		controls.enableZoom = true;
+		//是否自动旋转
+		controls.autoRotate = false;
+		//设置相机距离原点的最远距离
+		controls.minDistance = 1;
+		//设置相机距离原点的最远距离
+		controls.maxDistance = 200;
+		//是否开启右键拖拽
+		controls.enablePan = true;
+	}
+
+
+	// ---------------------------------------------------------------------
+	function onWindowResize() {
+		camera.aspect = window.innerWidth / window.innerHeight;
+		camera.updateProjectionMatrix();
+		renderer.setSize( window.innerWidth, window.innerHeight );
+	}
+
+	// ---------------------------------------------------------------------
+	function animate() {
+		requestAnimationFrame( animate );
+		render();
+	}
+
+	// ---------------------------------------------------------------------
+	function render() {
+		camera.lookAt( scene1.position );
+		renderer.render( scene1, camera );
+	}
+
+</script>
+
+</body>
+</html>
