@@ -23,6 +23,10 @@
 		#file_uploads {
 			display: none;
 		}
+
+		canvas {
+			margin-top: 70px;
+		}
 	</style>
 	<link rel="stylesheet" href="./css/upload.css">
 	<link rel="stylesheet" href="./css/DragAndDrop.css">
@@ -51,27 +55,16 @@
 	</div>
 
 
-	<input type="file" id="fileInput" allowdirs multiple />
-	<div>
-	</div>
-
-
 	<!--拖拽上传-->
 	<div id="dropDiv">拖拽 &amp; 把文件放到这里！</div>
-	<div>
-	</div>
-
-	<h3>Output</h3>
-	<pre id="console"></pre>
-
 
 	<br>
 	<button id="export_scene">导出场景</button>
-	<button id="export_obj">导出添加的三维模型</button>
 	<br/><br/>
 	<label><input id="option_binary" name="visible" type="checkbox">GLB是glTF2.0文件格式的二进制版本(<code>.glb</code>)</label>
 </div>
 
+<canvas id="canvas"></canvas>
 
 <!--拖拽上传插件-->
 <script type="text/javascript" src="./js/dragAndDrop/polyfill.js"></script>
@@ -119,10 +112,6 @@
 
 	document.getElementById( 'export_scene' ).addEventListener( 'click', function () {
 		exportGLTF( scene1 );
-	} );
-
-	document.getElementById( 'export_obj' ).addEventListener( 'click', function () {
-		exportGLTF( inputModel );
 	} );
 
 
@@ -194,6 +183,8 @@
 		container = document.createElement( 'div' );
 		document.body.appendChild( container );
 
+
+
 		scene1 = new THREE.Scene();
 		scene1.name = 'Scene1';
 
@@ -246,7 +237,9 @@
 		// ---------------------------------------------------------------------
 		renderer = new THREE.WebGLRenderer( { antialias: true } );
 		renderer.setPixelRatio( window.devicePixelRatio );
-		renderer.setSize( window.innerWidth, window.innerHeight );
+		//设置canvas 大小
+		renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
+
 		//设置背景颜色
 		renderer.setClearColor(0xffffff);
 		container.appendChild( renderer.domElement );
@@ -318,7 +311,8 @@
 		// ---------------------------------------------------------------------
 		renderer = new THREE.WebGLRenderer( { antialias: true } );
 		renderer.setPixelRatio( window.devicePixelRatio );
-		renderer.setSize( window.innerWidth, window.innerHeight );
+		//设置canvas 大小
+		renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
 		//设置背景颜色
 		renderer.setClearColor(0xffffff);
 		container.appendChild( renderer.domElement );
@@ -439,7 +433,8 @@
 	function onWindowResize() {
 		camera.aspect = window.innerWidth / window.innerHeight;
 		camera.updateProjectionMatrix();
-		renderer.setSize( window.innerWidth, window.innerHeight );
+		//设置canvas 大小
+		renderer.setSize( window.innerWidth/2, window.innerHeight/2 );
 	}
 
 	// ---------------------------------------------------------------------

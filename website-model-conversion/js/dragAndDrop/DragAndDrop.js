@@ -7,72 +7,27 @@ function toggleDisplay(id) {
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
-	function clearCons() {
-		var cons = document.getElementById('console');
-		if ('directory' in document.getElementById('fileInput')) {
-			cons.innerHTML = 'Use one of the above methods to show files here...';
-		} else {
-			cons.innerHTML = '不支持目录上载。则仅支持Chrome 25+。.';
-		}
-	}
-
-	clearCons();
 
 	function printToScreen() {
-		var cons = document.getElementById('console');
-
-		cons.innerHTML += '<br>';
 
 		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-
-			cons.innerHTML += '<br>';
-
-			if (arg.constructor === File) {
-				arg = 'file name: ' + arg.name + '; type: ' + arg.type;
+			if (i % 2 != 0) {
+				var arg = arguments[i];
+				console.log(arguments[i]);
 				// 文件转化成二进制文件
 				var blob = new Blob([arg]),
 					//转化成url
 					url = URL.createObjectURL(blob);
-				console.log(url);
-			}
+				console.log(url);   //输出了两次，包含了“/”和url
+				console.log(arg.name);   //输出了两次，包含了“undefined”和name
 
-			cons.innerHTML += arg;
+				//展示模型
+				initGltf(url);
+				animate();
+			}
 		}
 	}
 
-	/** 文件输入 **/
-	document.getElementById('fileInput').addEventListener('change', function () {
-		clearCons();
-
-		var uploadFile = function (file, path) {
-			printToScreen(path, file);
-			// 处理文件上传
-		};
-
-		var iterateFilesAndDirs = function (filesAndDirs, path) {
-			for (var i = 0; i < filesAndDirs.length; i++) {
-				if (typeof filesAndDirs[i].getFilesAndDirectories === 'function') {
-					var path = filesAndDirs[i].path;
-
-					// 此递归可以深入遍历目录
-					filesAndDirs[i].getFilesAndDirectories().then(function (subFilesAndDirs) {
-						// 遍历子目录中的文件和目录
-						iterateFilesAndDirs(subFilesAndDirs, path);
-					});
-				} else {
-					uploadFile(filesAndDirs[i], path);
-				}
-			}
-		};
-
-		// 首先遍历所选的文件和目录
-		if ('getFilesAndDirectories' in this) {
-			this.getFilesAndDirectories().then(function (filesAndDirs) {
-				iterateFilesAndDirs(filesAndDirs, '/');
-			});
-		}
-	});
 
 	/**  拖拽上传 **/
 	function dragHover(e) {
@@ -93,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		e.stopPropagation();
 		e.preventDefault();
 
-		clearCons();
 
 		e.target.className = '';
 
