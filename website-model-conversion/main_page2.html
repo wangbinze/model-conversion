@@ -39,7 +39,7 @@
 		<P>您可以通过本页面对你的3D模型进行<b>在线查看</b>和<b>转换</b>，<b>不需要</b>任何第三方软件</P>
 		<p>所有转换都发生在您的电脑上，任何模型或文本都不会上传到我们的服务器或以任何方式存储。</p>
 	</div>
-	<div class="uploadebutton">
+	<!--<div class="uploadebutton">
 		<form>
 			<div>
 				<label for="file_uploads">选择你要查看的模型文件(glTF/dae/obj)</label>
@@ -52,11 +52,26 @@
         >
 			</div>
 		</form>
-	</div>
+	</div>-->
 
 
 	<!--拖拽上传-->
-	<div id="dropDiv">拖拽 &amp; 把文件放到这里！</div>
+	<div id="dropDiv">
+		<div class="uploadebutton">
+			<form>
+				<div>
+					<label for="file_uploads">选择你要查看的模型文件(glTF/dae/obj),点击选择或者拖拽到此处</label>
+					<br>
+					<input type="file"
+					       id="file_uploads"
+					       name="file_uploads"
+					       onchange="onUpload(this.files[0])"
+					       accept="" multiple
+					>
+				</div>
+			</form>
+		</div>
+	</div>
 
 	<br>
 	<button id="export_scene">导出场景</button>
