@@ -6,77 +6,69 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel="icon" href="images/model.ico">
 	<style>
-		body {
-			font-family: Monospace;
-			/*background-color: #000;*/
-			margin: 0px;
-			overflow: hidden;
-			text-align:center;
-		}
-		#info {
-			color: #3340cc;
-			text-align: center;
-			position: absolute;
-			top: 0px; width: 100%;
-			padding: 5px;
-		}
-		#file_uploads {
-			display: none;
-		}
-
-		canvas {
-			margin-top: 70px;
-		}
 	</style>
-	<link rel="stylesheet" href="./css/upload.css">
+	<!--<link rel="stylesheet" href="./css/upload.css">-->
 	<link rel="stylesheet" href="./css/DragAndDrop.css">
+	<link rel="stylesheet" href="./css/myCss.css">
 </head>
 <body>
+
+<!--header所展示的内容-->
+<header id="here">
+	<div class="left">
+		<img src="images/dibulogo.png" alt="" class="fl">
+		<ul class="fl navbar gone">
+			<li class="fl">
+				<a href="./main.html" class="nav-a" >主页</a>
+			</li>
+			<li class="fl">
+				<a href="" class="nav-a" style="color:#ea4c89 ">模型查看和转换</a>
+			</li>
+			<li class="fl">
+				<a href="./about_the_model.html" class="nav-a">关于模型</a>
+			</li>
+			<li class="fl">
+				<a href="http://www.paramland.com/" target="_blank" class="nav-a">关于我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="right">
+		<ul class="fr navbar">
+			<li class="fr gone"><span>Paramland</span></li>
+		</ul>
+	</div>
+</header>
 
 <div id="info">
 	 <h1>重庆数地景观</h1>
 	<div class="description">
-		<P>您可以通过本页面对你的3D模型进行<b>在线查看</b>和<b>转换</b>，<b>不需要</b>任何第三方软件</P>
+		<P>您可以通过本页面对你的3D模型进行<b>在线查看</b>和<b>转换</b>，<b>不需要</b>任何第三方软件!</P>
 		<p>所有转换都发生在您的电脑上，任何模型或文本都不会上传到我们的服务器或以任何方式存储。</p>
 	</div>
-	<!--<div class="uploadebutton">
+</div>
+
+<!--拖拽上传-->
+<div id="dropDiv">
+	<div class="uploadebutton">
 		<form>
 			<div>
-				<label for="file_uploads">选择你要查看的模型文件(glTF/dae/obj)</label>
+				<label for="file_uploads">选择你要查看的模型文件(glTF/dae/obj),点击此处选择或者拖拽到此处</label>
 				<br>
 				<input type="file"
 				       id="file_uploads"
 				       name="file_uploads"
 				       onchange="onUpload(this.files[0])"
 				       accept="" multiple
-        >
+				>
 			</div>
 		</form>
-	</div>-->
-
-
-	<!--拖拽上传-->
-	<div id="dropDiv">
-		<div class="uploadebutton">
-			<form>
-				<div>
-					<label for="file_uploads">选择你要查看的模型文件(glTF/dae/obj),点击选择或者拖拽到此处</label>
-					<br>
-					<input type="file"
-					       id="file_uploads"
-					       name="file_uploads"
-					       onchange="onUpload(this.files[0])"
-					       accept="" multiple
-					>
-				</div>
-			</form>
-		</div>
 	</div>
-
-	<br>
+</div>
+<div>
 	<button id="export_scene">导出场景</button>
-	<br/><br/>
-	<label><input id="option_binary" name="visible" type="checkbox">GLB是glTF2.0文件格式的二进制版本(<code>.glb</code>)</label>
+</div>
+<div class="glb">
+	<label><input id="option_binary" name="visible" type="checkbox">GLB是glTF2.0文件格式的二进制版本(<code>.glb</code>)(可选项)</label>
 </div>
 
 <canvas id="canvas"></canvas>

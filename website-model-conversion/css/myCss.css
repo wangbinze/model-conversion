@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  /*禁止选择文件*/
+  user-select: none;
+}
+
+/* 消除浏览器默认选项 */
+
+a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+li {
+  list-style: none; /* 改变项目符号样式 */
+}
+
+body {
+  background-color: #91B493;
+  text-align: center;
+}
+
+header {
+  background-color: #333333;
+  height: 56px;
+}
+
+header .left img {
+  height: 48px;
+  margin-top: 4px;
+}
+
+header .navbar > li {
+  color: #999999;
+  margin: 0 10px;
+  font-size: 0.9em;
+  line-height: 56px;
+  cursor: pointer;
+}
+
+.left {
+  margin-left: 15%;
+}
+
+.right {
+  margin-right: 15%;
+}
+
+.right li span {
+  background: linear-gradient(45deg, #e47b49 0%, #ea4c89 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+header .fas {
+  font-size: 1.2em;
+}
+
+header .sub {
+  background-color: #333333;
+  border-radius: 0 0 5px 5px;
+  line-height: 2.5em;
+  width: 180px;;
+  padding-bottom: 10px;
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+
+header .sub a {
+  padding: 10px;
+}
+
+header .navbar > li:hover .nav-a {
+  color: #ea4c89;
+}
+
+header .navbar > li:hover .sub {
+  display: block;
+}
+
+header .sub li:hover {
+  background-color: gray;
+}
+
+header .sub li:hover a {
+  color: #FFFFFF;
+}
+
+@media (max-width: 560px) {
+  .right {
+    display: none;
+  }
+}
+
+
+/*info*/
+#info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#info h1 {
+  background: linear-gradient(45deg, #21e451 0%, #ea4a2e 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-fill-color: transparent;
+  margin-bottom: 15px;
+}
+
+
+#file_uploads {
+  display: none;
+}
+
+#export_scene {
+  margin-top: 10px;
+  width: 100px;
+  height: 25px;
+  border-radius: 15%;
+}
+#export_scene:hover {
+  background-color: #EEA9A9;
+}
+
+.glb {
+  margin-top: 6px;
+}

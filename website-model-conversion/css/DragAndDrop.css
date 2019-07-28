@@ -3,14 +3,10 @@ h1 {
   margin-top: 0;
 }
 
-h1,
-h2 {
-  color: #0576A1;
-}
 
 a {
   text-decoration: none;
-  color: #0074D9;
+  color: #516e41;
 }
 
 a:hover {
@@ -18,9 +14,10 @@ a:hover {
 }
 
 #dropDiv {
-  width: 40%;
-  border: 2px solid #3340cc;
-  margin: 20px 30% 0;
+  width: 70%;
+  border: 2px solid #E87A90;
+  border-radius:25% 10%;
+  margin: 15px 15% 0;
   padding: 20px 10px;
   text-align: center;
   color: #CCCCCC;
