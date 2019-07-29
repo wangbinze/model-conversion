@@ -21,18 +21,18 @@ function onUpload(file) {
 
 	if (file.name.slice(-4) == 'gltf'){
 		//调用gltfShow  需要传参
-		gltfShow(url);
+		showGltf(url);
 		console.log('成功显示gltf文件');
 	} else if (file.name.slice(-4) == '.obj') {
 		//调用模型转换函数
 		//obj2gltf
 		// myObj2Gltf(url);
 		//调用objShow
-		objShow(url);
+		showObj(url);
 		aaa(url)
 		console.log('11')
 	} else if (file.name.slice(-4) == '.dae') {
-		daeShow(url);
+		showDae(url);
 		console.log('22')
 	} else {
 		alert('请上传正确的文件')

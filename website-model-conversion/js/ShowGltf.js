@@ -1,5 +1,5 @@
-//dae展示  需要传参
-function daeShow(url) {
+//gltf展示  需要传参
+function showGltf(url) {
 	//3D动画的js代码和函数
 
 	// 获取container
@@ -32,7 +32,7 @@ function daeShow(url) {
 	//灯光
 	var light;
 	function initLight() {
-		scene.add(new THREE.AmbientLight(0x444444));
+		scene.add(new THREE.AmbientLight(0xffffff));
 		light = new THREE.PointLight(0xffffff);
 		light.position.set(0, 0, 100);
 		//告诉平行光需要开启阴影投射
@@ -42,27 +42,40 @@ function daeShow(url) {
 
 	//模型
 	function initModel() {
+		//辅助工具、视图中间的xyz轴
+		/*var helper = new THREE.AxesHelper(0);
+		scene.add(helper);*/
 
-		//加载OBJ格式的模型
-		var loader = new THREE.ColladaLoader();
-		var mesh;
+		//加载gltf格式的模型
+		var loader = new THREE.GLTFLoader();
+		loader.setDRACOLoader(new THREE.DRACOLoader());
+		// Load a glTF resource
 		loader.load(
+			// resource URL
+			//  在此处设置  对路径进行选择
+			// '../Output/model3.gltf',
 			url,
-			function (result) {
-				// var material = new THREE.MeshLambertMaterial({color: 0x5C3A21});
-				mesh = result.scene.children[0].clone();
-				// 加载完obj文件是一个场景组，遍历它的子元素，赋值纹理并且更新面和点的发现了
-				// loadedMesh.chilen.forEach(function (child) {
-				// 	child.material = material;
-				// 	child.geometry.computeFaceNormals();
-				// 	child.geometry.computeVertexNormals();
-				// });
 
-				//模型放大一百倍
-				// loadedMesh.scale.set(10, 10, 10);
-				scene.add(mesh);
-			});
-
+			// called when the resource is loaded
+			function (gltf) {
+				//设置模型大小
+				// gltf.scene.scale.set(0.08,0.08,0.08);
+				scene.add(gltf.scene);
+				// gltf.animations; // Array<THREE.AnimationClip>
+				// gltf.scene; // THREE.Scene
+				// gltf.scenes; // Array<THREE.Scene>
+				// gltf.cameras; // Array<THREE.Camera>
+				// gltf.asset; // Object
+			},
+			// called while loading is progressing
+			function (xhr) {
+				console.log((xhr.loaded / xhr.total * 1) + '% loaded');
+			},
+			// called when loading has errors
+			function (error) {
+				console.log('An error happened');
+			},
+		)
 	}
 
 	//初始化性能插件、（左上角的fps控件）

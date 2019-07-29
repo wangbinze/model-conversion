@@ -1,5 +1,5 @@
 //gltf展示  需要传参
-function objShow(url) {
+function showObj(url) {
 	//3D动画的js代码和函数
 
 	// 获取container
