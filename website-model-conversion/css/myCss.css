@@ -127,7 +127,7 @@ header .sub li:hover a {
 }
 
 #info h1 {
-  background: linear-gradient(45deg, #21e451 0%, #ea4a2e 100%);
+  background: linear-gradient(45deg, #b589e4 30%, #ea4a2e 70%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
