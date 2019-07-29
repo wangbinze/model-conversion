@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数地景观-模型查看主页</title>
+	<link rel="icon" href="../images/model.ico">
+	<link rel="stylesheet" href="../css/myCss.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #FFFFFF;
+		}
+
+		.pic {
+			margin-top: 60px;
+		}
+
+		.img {
+			width: 500px;
+			height: auto;
+		}
+
+		.shudi {
+			position: absolute;
+			top: 150px;
+			width: 460px;
+		}
+		.shudi h1 , h2{
+			background: linear-gradient(45deg, #4e67e4 0%, #ea16e4 100%);
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+			text-fill-color: transparent;
+			text-align: left;
+			margin-left: 15%;
+		}
+		.contact {
+			text-align: right;
+			margin-right: 15%;
+		}
+		.contact a{
+			color: #70649A;
+			font-size: 20px;
+			text-decoration: underline;
+		}
+		canvas {
+			display: block;
+		}
+		#info {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			text-align: center;
+			z-index: 1; /* TODO Solve this in HTML */
+		}
+		@media (min-height: 760px) and (min-width: 1400px) {
+			.shudi h1 {
+				font-size: 75px;
+				margin-top: 6em;
+			}
+
+		}
+		@media (min-height: 760px) and (min-width: 1400px) {
+			.shudi h2 {
+				font-size: 42px;
+				margin-top: 0.5em;
+			}
+		}
+
+		.main {
+			margin-top: 56px;
+		}
+
+	</style>
+</head>
+<body onload="draw()">
+<!--header所展示的内容-->
+<header id="here">
+	<div class="left">
+		<img src="../images/dibulogo.png" alt="" class="fl">
+		<ul class="fl navbar gone">
+			<li class="fl">
+				<a href="./main.html" class="nav-a" style="color:#ea4c89 ">主页</a>
+			</li>
+			<li class="fl">
+				<a href="model_conversion.html" class="nav-a">模型查看和转换</a>
+			</li>
+			<li class="fl">
+				<a href="about_the_model.html" class="nav-a">关于模型</a>
+			</li>
+			<li class="fl">
+				<a href="keep_in_touch.html" class="nav-a">保持联系</a>
+			</li>
+			<li class="fl">
+				<a href="http://www.paramland.com/" target="_blank" class="nav-a">关于我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="right">
+		<ul class="fr navbar">
+			<li class="fr gone">
+				<a href="http://www.paramland.com/" target="_blank"><span>Paramland</span></a>
+			</li>
+		</ul>
+	</div>
+</header>
+<div id="info">
+	<!--<div class="pic">-->
+		<!--<img src="./images/数地景观(黑底).png" alt="" class="img">-->
+	<!--</div>-->
+
+	<div class="shudi">
+		<h1>PARAMLAND | 数地景观</h1>
+		<h2>进一步理解空间，发掘更大价值</h2>
+	</div>
+
+	<!--<div class="contact">-->
+		<!--<a href="./keep_in_touch.html">保持联系</a>-->
+	<!--</div>-->
+</div>
+
+
+</body>
+<script type="text/javascript" src="../three/three.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/loaders/GLTFLoader.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/controls/OrbitControls.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/libs/dat.gui.min.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/libs/stats.min.js"></script>
+
+<script type="text/javascript" src="../js/Detector.js"></script>
+<script type="text/javascript">
+		var renderer, camera, scene, gui, light, stats, controls, earth, material;
+
+		function initRender() {
+			renderer = new THREE.WebGLRenderer({antialias: true});
+			renderer.setPixelRatio(window.devicePixelRatio);
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			renderer.setClearColor(0xeeeeee);
+			renderer.shadowMap.enabled = true;
+			//告诉渲染器需要阴影效果
+			document.body.appendChild(renderer.domElement);
+		}
+
+		function initCamera() {
+			camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 200);
+			camera.position.set(0, 12, 15 );
+
+			//CubeCamera（near：Number，far：Number，cubeResolution：Number）
+			//近 - 近裁剪距离。
+			//远 - 裁剪距离
+			//cubeResolution - 设置立方体边缘的长度。
+
+			//可以通过renderTarget对象获取生成的立方体纹理。
+
+			//创建一个获取环境贴图的cubeCamera
+			cubeCamera = new THREE.CubeCamera(0.1, 1000, 256);
+			scene.add(cubeCamera);
+		}
+
+		function initScene() {
+			//给场景添加天空盒子纹理
+			var cubeTextureLoader = new THREE.CubeTextureLoader();
+			cubeTextureLoader.setPath( '../images/' );
+			//六张图片分别是朝前的（posz）、朝后的（negz）、朝上的（posy）、朝下的（negy）、朝右的（posx）和朝左的（negx）。
+			var cubeTexture = cubeTextureLoader.load( [
+				'right.jpg', 'left.jpg',
+				'top.jpg', 'bottom.jpg',
+				'front.jpg', 'back.jpg'
+			] );
+
+			scene = new THREE.Scene();
+
+			scene.background = cubeTexture;
+		}
+
+		//初始化dat.GUI简化试验流程
+		function initGui() {
+
+
+			//声明一个保存需求修改的相关数据的对象
+			gui = {
+				addTexture:function () {
+					//添加平面贴图
+					material.map = new THREE.TextureLoader().load("../images/earth_atmos_2048.jpg");
+					material.needsUpdate = true;
+				},
+				addNormal:function () {
+					//添加法向量纹理
+					material.normalMap = new THREE.TextureLoader().load("../images/earth_normal_2048.jpg");
+					material.needsUpdate = true;
+				},
+				shininess:10
+			};
+
+			var datGui = new dat.GUI();
+			//将设置属性添加到gui当中，gui.add(对象，属性，最小值，最大值）
+			datGui.add(gui, "addTexture");
+			datGui.add(gui, "addNormal");
+			datGui.add(gui, "shininess", 0, 100).onChange(function (e) {
+				material.shininess = e;
+			});
+		}
+
+		function initLight() {
+			scene.add(new THREE.AmbientLight(0x444444));
+
+			light = new THREE.DirectionalLight(0xffffff);
+			light.position.set(0, 20, 20 );
+
+			light.castShadow = true;
+			light.shadow.camera.top = 10;
+			light.shadow.camera.bottom = -10;
+			light.shadow.camera.left = -10;
+			light.shadow.camera.right = 10;
+
+			//告诉平行光需要开启阴影投射
+			light.castShadow = true;
+
+			scene.add(light);
+		}
+
+		function initModel() {
+
+			//辅助工具
+			// var helper = new THREE.AxesHelper(50);
+			// scene.add(helper);
+
+			//添加地球
+			var geometry = new THREE.SphereGeometry(5, 60, 30);
+			material = new THREE.MeshPhongMaterial({
+				color:0x666666
+			});
+
+			//添加高光贴图
+			material.specularMap = new THREE.TextureLoader().load("../images/earth_specular_2048.jpg");
+
+			//添加高光颜色
+			material.specular = new THREE.Color(0x00ffff);
+
+			//添加高光的平滑度，默认为30，值越高越强烈
+			material.shininess = 10;
+
+			//添加到场景
+			earth = new THREE.Mesh(geometry, material);
+			scene.add(earth);
+
+		}
+
+		//初始化性能插件
+		/*function initStats() {
+			stats = new Stats();
+			document.body.appendChild(stats.dom);
+		}*/
+
+		function initControls() {
+
+			controls = new THREE.OrbitControls(camera, renderer.domElement);
+			//设置控制器的中心点
+			//controls.target.set( 0, 5, 0 );
+			// 如果使用animate方法时，将此函数删除
+			//controls.addEventListener( 'change', render );
+			// 使动画循环使用时阻尼或自转 意思是否有惯性
+			controls.enableDamping = true;
+			//动态阻尼系数 就是鼠标拖拽旋转灵敏度
+			//controls.dampingFactor = 0.25;
+			//是否可以缩放
+			controls.enableZoom = true;
+			//是否自动旋转
+			controls.autoRotate = false;
+			controls.autoRotateSpeed = 0.5;
+			//设置相机距离原点的最远距离
+			controls.minDistance = 1;
+			//设置相机距离原点的最远距离
+			controls.maxDistance = 2000;
+			//是否开启右键拖拽
+			controls.enablePan = true;
+		}
+
+		function render() {
+			//让地球自转
+			earth.rotation.y += 0.01;
+		}
+
+		//窗口变动触发的函数
+		function onWindowResize() {
+
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+
+		}
+
+		function animate() {
+			//更新控制器
+			render();
+
+			//更新性能插件
+			// stats.update();
+
+			controls.update();
+
+			renderer.render(scene, camera);
+
+			requestAnimationFrame(animate);
+		}
+
+		function draw() {
+			//兼容性判断
+			if (!Detector.webgl) Detector.addGetWebGLMessage();
+
+			initGui();
+			initRender();
+			initScene();
+			initCamera();
+			initLight();
+			initModel();
+			initControls();
+			// initStats();
+
+			animate();
+			window.onresize = onWindowResize;
+		}
+
+</script>
+</html>

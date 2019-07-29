@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数地景观--关于模型</title>
+	<link rel="icon" href="../images/model.ico">
+	<link rel="stylesheet" href="../css/myCss.css">
+	<style>
+		body {
+			background-color: #91B493;
+		}
+
+
+		.main h1 {
+			background: linear-gradient(45deg, #4e67e4 0%, #ea16e4 100%);
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+			text-fill-color: transparent;
+			text-align: right;
+			margin-right: 15%;
+		}
+
+		.img {
+			margin-top: 60px;
+		}
+		.img img{
+			width: 400px;
+		}
+
+		.about {
+			width: 70%;
+			margin: 50px 15% ;
+		}
+		.about div{
+			margin: 20px 0;
+		}
+	</style>
+</head>
+<body>
+<!--header所展示的内容-->
+<header id="here">
+	<div class="left">
+		<img src="../images/dibulogo.png" alt="" class="fl">
+		<ul class="fl navbar gone">
+			<li class="fl">
+				<a href="main.html" class="nav-a" >主页</a>
+			</li>
+			<li class="fl">
+				<a href="model_conversion.html" class="nav-a">模型查看和转换</a>
+			</li>
+			<li class="fl">
+				<a href="" class="nav-a" style="color:#ea4c89 ">关于模型</a>
+			</li>
+			<li class="fl">
+				<a href="http://www.paramland.com/" target="_blank" class="nav-a">关于我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="right">
+		<li class="fr gone">
+			<a href="http://www.paramland.com/" target="_blank"><span>Paramland</span></a>
+		</li>
+	</div>
+</header>
+
+<div class="img">
+	<img src="../images/114429d5296e001135.png" alt="">
+</div>
+
+<div class="about">
+	<div>
+		<p style="font-size: 32px">常用三维模型格式</p>
+	</div>
+
+	<div>
+		<h2>.glTF</h2>
+		<p>glTF是一种可以减少3D格式中与渲染无关的冗余数据并且在更加适合OpenGL簇加载的一种3D文件格式。glTF的提出是源自于3D工业和媒体发展的过程中，对3D格式统一化的急迫需求。如果用一句话来描述：glTF 就是三维文件的 JPEG ，三维格式的 MP3</p>
+	</div>
+	<div>
+		<h2>.glb</h2>
+		<p>二进制的GLTF</p>
+	</div>
+	<div>
+		<h2>.obj</h2>
+		<p>OBJ文件是Alias|Wavefront公司为它的一套基于工作站的3D建模和动画软件"Advanced Visualizer"开发的一种标准3D模型文件格式，很适合用于3D软件模型之间的互导。目前几乎所有知名的3D软件都支持OBJ文件的读写。OBJ文件是一种文本文件，可以直接用写字板打开进行查看和编辑修改。</p>
+	</div>
+	<div>
+		<h2>.dae</h2>
+		<p>DAE 是纯文本的模型格式，其本质就是一个单纯的xml文件。相比fbx，对dae格式模型的载入我们拥有非常高的自由控制，这也是最复杂的地方。基本上，dae文件内一开始就把数据分成了好几大块。对我们来说最为有用的是VisualScenes(包含场景骨骼节点树)、Nodes(与VisualScenes类似，两者或互为补充)、Geometries（网格数据）、Materials/Effects/Images（材质相关信息）、Controllers（骨骼信息数据）、Animations（动画数据）、AnimationClips（全局的动画信息），其中静态模型一般也就包括VisualScenes和Geometries。</p>
+	</div>
+</div>
+
+</body>
+</html>
