@@ -105,7 +105,7 @@
 
 <script>
 
-
+<!--导出-->
 	function exportGLTF( input ) {
 
 		var gltfExporter = new THREE.GLTFExporter();
@@ -164,6 +164,11 @@
 	//文件上传按钮
 	// ---------------------------------------------------------------------
 	function onUpload(file) {
+
+		//清除画布
+		var canvas = document.getElementsByTagName('canvas');
+		console.log(canvas);
+
 
 		// 文件转化成二进制文件
 		var blob = new Blob([file]),
