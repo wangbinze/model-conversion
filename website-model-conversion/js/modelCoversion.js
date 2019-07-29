@@ -192,7 +192,6 @@ function initGltf(url) {
 function initObj(url) {
 	container = document.createElement( 'div' );
 	document.body.appendChild( container );
-	context.clearRect(0, 0, canvas.width, canvas.height);
 
 
 	scene1 = new THREE.Scene();
