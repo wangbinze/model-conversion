@@ -6,9 +6,6 @@
 	<link rel="icon" href="../images/model.ico">
 	<link rel="stylesheet" href="../css/myCss.css">
 	<style>
-		body {
-			background-color: #91B493;
-		}
 		.main h1 {
 			background: linear-gradient(45deg, #4e67e4 0%, #ea16e4 100%);
 			-webkit-background-clip: text;
@@ -43,6 +40,10 @@
 			text-indent: 2em;
 			margin-top: 5px;
 			line-height:1.5;
+			font-family: "Microsoft YaHei", Times, serif;
+		}
+		.about {
+			color: #FFFFFF;
 		}
 	</style>
 </head>
@@ -102,6 +103,10 @@
 	<div class="introduction">
 		<h1 style="color: #CA44FF">.dae</h1>
 		<p>DAE 是纯文本的模型格式，其本质就是一个单纯的xml文件。相比fbx，对dae格式模型的载入我们拥有非常高的自由控制，这也是最复杂的地方。基本上，dae文件内一开始就把数据分成了好几大块。对我们来说最为有用的是VisualScenes(包含场景骨骼节点树)、Nodes(与VisualScenes类似，两者或互为补充)、Geometries（网格数据）、Materials/Effects/Images（材质相关信息）、Controllers（骨骼信息数据）、Animations（动画数据）、AnimationClips（全局的动画信息），其中静态模型一般也就包括VisualScenes和Geometries。</p>
+	</div>
+	<div class="introduction">
+		<h1 style="color: #799D46">3D Tiles</h1>
+		<p>3D Tiles是为流式处理和渲染海量3D地理空间数据而设计的，例如倾斜摄影，3D建筑，BIM/CAD,实例要素和点云。它定义了一种数据分层结构和一组切片格式，用于渲染数据内容。3D Tiles没有为数据的可视化定义的明确规则；客户可以自定义他们认为合适的方式来使3D Tiles数据可视化。</p>
 	</div>
 </div>
 

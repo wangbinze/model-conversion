@@ -230,6 +230,8 @@ function initObj(url) {
 	loader.load( url, function ( obj ) {
 		inputModel = obj;
 		inputModel.scale.multiplyScalar( 1.5 );
+		inputModel.specularMap = new THREE.TextureLoader().load("url1");
+
 		scene1.add( inputModel );
 	} );
 

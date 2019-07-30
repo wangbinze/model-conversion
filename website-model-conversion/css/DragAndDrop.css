@@ -16,7 +16,7 @@ a:hover {
 #dropDiv {
   width: 70%;
   border: 2px solid #E87A90;
-  border-radius:25% 10%;
+  /*border-radius:25% 10%;*/
   margin: 15px 15% 0;
   padding: 20px 10px;
   text-align: center;

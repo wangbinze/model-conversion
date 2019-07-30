@@ -28,7 +28,7 @@ li {
 }
 
 body {
-  background-color: #91B493;
+  background-color: #000000;
   text-align: center;
 }
 
@@ -154,4 +154,14 @@ header .sub li:hover a {
 
 .glb {
   margin-top: 6px;
+}
+
+.description {
+  color: #FFFFFF;
+  font-family: "Microsoft YaHei", Times, serif;
+
+}
+.glb {
+  color: #FFFFFF;
+  font-family: "Microsoft YaHei", Times, serif;
 }
