@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
   /*禁止选择文件*/
-  user-select: none;
+  /*user-select: none;*/
 }
 
 /* 消除浏览器默认选项 */
@@ -29,6 +29,7 @@ li {
 
 body {
   background-color: #000000;
+  /*background-color: #7BA23F;*/
   text-align: center;
 }
 

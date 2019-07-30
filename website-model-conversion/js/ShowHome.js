@@ -3,7 +3,11 @@ var renderer, camera, scene, gui, light, stats, controls, earth, material;
 function initRender() {
 	renderer = new THREE.WebGLRenderer({antialias: true});
 	renderer.setPixelRatio(window.devicePixelRatio);
+
+
 	renderer.setSize(window.innerWidth, window.innerHeight);
+
+
 	renderer.setClearColor(0xeeeeee);
 	renderer.shadowMap.enabled = true;
 	//告诉渲染器需要阴影效果
@@ -43,7 +47,7 @@ function initScene() {
 }
 
 //初始化dat.GUI简化试验流程
-function initGui() {
+/*function initGui() {
 
 
 	//声明一个保存需求修改的相关数据的对象
@@ -68,7 +72,7 @@ function initGui() {
 	datGui.add(gui, "shininess", 0, 100).onChange(function (e) {
 		material.shininess = e;
 	});
-}
+}*/
 
 function initLight() {
 	scene.add(new THREE.AmbientLight(0x444444));
@@ -102,7 +106,9 @@ function initModel() {
 
 	//添加高光贴图
 	material.specularMap = new THREE.TextureLoader().load("../images/earth_specular_2048.jpg");
-
+	//添加平面贴图
+	material.map = new THREE.TextureLoader().load("../images/earth_atmos_2048.jpg");
+	material.needsUpdate = true;
 	//添加高光颜色
 	material.specular = new THREE.Color(0x00ffff);
 
@@ -136,7 +142,7 @@ function initControls() {
 	controls.enableZoom = true;
 	//是否自动旋转
 	controls.autoRotate = false;
-	controls.autoRotateSpeed = 0.5;
+	controls.autoRotateSpeed = 0.05;
 	//设置相机距离原点的最远距离
 	controls.minDistance = 1;
 	//设置相机距离原点的最远距离
@@ -177,7 +183,7 @@ function draw() {
 	//兼容性判断
 	if (!Detector.webgl) Detector.addGetWebGLMessage();
 
-	initGui();
+	// initGui();
 	initRender();
 	initScene();
 	initCamera();

@@ -13,13 +13,6 @@
 		body {
 			background-color: #000000;
 		}
-		.pic {
-			margin-top: 60px;
-		}
-		.img {
-			width: 500px;
-			height: auto;
-		}
 		.shudi {
 			position: absolute;
 			top: 150px;
@@ -36,10 +29,6 @@
 			text-fill-color: transparent;
 			text-align: left;
 			/*margin-left: 15%;*/
-		}
-		.contact {
-			text-align: right;
-			margin-right: 15%;
 		}
 		.contact a{
 			color: #70649A;
@@ -64,31 +53,67 @@
 				font-size: 14px;
 			}
 		}
-		.main {
-			margin-top: 56px;
-		}
 		canvas {
 			display: block; /* fix necessary to remove space at bottom of canvas */
 			overflow:hidden;
 			vertical-align:top;
 		}
 
+
+		header {
+			position: absolute;
+			width: 100%;
+			background-color: #333333;
+			height: 56px;
+		}
+		li {
+			list-style: none; /* 改变项目符号样式 */
+		}
+		a {
+			 color: #999999;
+			 text-decoration: none;
+		 }
+		ul li{
+			float: left;
+		}
+		header .left img {
+			height: 40px;
+			margin-top: 4px;
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+		.left {
+			margin-left: 15%;
+		}
+		.right {
+			margin-right: 15%;
+		}
+
+		header .navbar > li {
+			color: #999999;
+			margin: 0 10px;
+			font-size: 0.9em;
+			line-height: 56px;
+			cursor: pointer;
+		}
 	</style>
 </head>
 <body onload="draw()">
 <!--header所展示的内容-->
 <header id="here">
 	<div class="left">
-		<img src="../images/dibulogo.png" alt="" class="fl">
+		<a href="./main1.html"><img src="../images/dibulogo.png" alt="" class="fl"></a>
 		<ul class="fl navbar gone">
 			<li class="fl">
-				<a href="./main.html" class="nav-a" style="color:#ea4c89 ">主页</a>
+				<a href="./main1.html" class="nav-a" style="color:#ea4c89 ">主页</a>
 			</li>
 			<li class="fl">
 				<a href="model_conversion.html" class="nav-a">模型查看和转换</a>
 			</li>
 			<li class="fl">
-				<a href="about_the_model.html" class="nav-a">关于模型</a>
+				<a href="about_the_model.html" class="nav-a">模型百科</a>
 			</li>
 			<li class="fl">
 				<a href="keep_in_touch.html" class="nav-a">保持联系</a>
