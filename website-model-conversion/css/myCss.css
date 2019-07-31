@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  /*font-family: "Times New Roman", Times, serif;*/
   /*禁止选择文件*/
   /*user-select: none;*/
 }
@@ -28,7 +28,7 @@ li {
 }
 
 body {
-  background-color: #000000;
+  background-color: #ececec;
   /*background-color: #7BA23F;*/
   text-align: center;
 }
@@ -128,13 +128,13 @@ header .sub li:hover a {
 }
 
 #info h1 {
-  background: linear-gradient(45deg, #b589e4 30%, #ea4a2e 70%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-fill-color: transparent;
+  /*background: linear-gradient(45deg, #b589e4 30%, #ea4a2e 70%);*/
+  /*-webkit-background-clip: text;*/
+  /*-moz-background-clip: text;*/
+  /*background-clip: text;*/
+  /*-webkit-text-fill-color: transparent;*/
+  /*-moz-text-fill-color: transparent;*/
+  /*text-fill-color: transparent;*/
   margin-bottom: 15px;
 }
 
@@ -144,13 +144,15 @@ header .sub li:hover a {
 }
 
 #export_scene {
+  border: 0;
   margin-top: 10px;
   width: 100px;
   height: 25px;
   border-radius: 15%;
 }
 #export_scene:hover {
-  background-color: #EEA9A9;
+  background-color: #006284;
+  color: red;
 }
 
 .glb {
@@ -158,11 +160,8 @@ header .sub li:hover a {
 }
 
 .description {
-  color: #FFFFFF;
   font-family: "Microsoft YaHei", Times, serif;
-
 }
 .glb {
-  color: #FFFFFF;
   font-family: "Microsoft YaHei", Times, serif;
 }

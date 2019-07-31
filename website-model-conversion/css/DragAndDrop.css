@@ -15,12 +15,16 @@ a:hover {
 
 #dropDiv {
   width: 70%;
-  border: 2px solid #E87A90;
-  /*border-radius:25% 10%;*/
+  border: 2px solid #000000;
+  /*border-radius:25% 25%;*/
   margin: 15px 15% 0;
   padding: 20px 10px;
   text-align: center;
-  color: #CCCCCC;
+  /*color: #CCCCCC;*/
+}
+
+#dropDiv:hover{
+  background-color: #7F9CCB;
 }
 
 #dropDiv.over {
