@@ -21,9 +21,24 @@ document.addEventListener('DOMContentLoaded', function (event) {
 				console.log(url);   //输出了两次，包含了“/”和url
 				console.log(arg.name);   //输出了两次，包含了“undefined”和name
 
+//判断上传的file文件是何种格式--gltf/obj/osgb/dae
+
+				if (arg.name.slice(-4) == 'gltf'){
+					initGltf(url);
+					console.log('成功显示gltf文件');
+				} else if (arg.name.slice(-4) == '.obj') {
+					initObj(url);
+					console.log('成功显示obj文件')
+				} else if (arg.name.slice(-4) == '.dae') {
+					initDae(url);
+					console.log('成功显示dae文件')
+				} else {
+					alert('请上传正确的文件')
+				}
+
 				//展示模型
-				initGltf(url);
-				animate();
+				// initGltf(url);
+				// animate();
 			}
 		}
 	}

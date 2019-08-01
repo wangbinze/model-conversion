@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数地景观-模型查看主页</title>
+	<link rel="icon" href="../images/model.ico">
+	<link rel="stylesheet" href="../css/myCss.css">
+	<style>
+		.shudi {
+			position: absolute;
+			top: 150px;
+			width: 460px;
+			margin-left: 15%;
+		}
+		.shudi h1 , h2{
+			background: linear-gradient(45deg, #4e67e4 0%, #ea16e4 100%);
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+			text-fill-color: transparent;
+			text-align: left;
+			/*margin-left: 15%;*/
+		}
+		.contact a{
+			color: #70649A;
+			font-size: 20px;
+			text-decoration: underline;
+		}
+		canvas {
+			display: block;
+		}
+		#info {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			text-align: center;
+			z-index: 1; /* TODO Solve this in HTML */
+		}
+		@media (max-width: 600px) {
+			.shudi h1 {
+				font-size: 20px;
+			}
+			.shudi h2 {
+				font-size: 14px;
+			}
+		}
+		canvas {
+			display: block; /* fix necessary to remove space at bottom of canvas */
+			overflow:hidden;
+			vertical-align:top;
+		}
+
+
+		header {
+			position: absolute;
+			width: 100%;
+			background-color: #333333;
+			height: 56px;
+		}
+		li {
+			list-style: none; /* 改变项目符号样式 */
+		}
+		ul li{
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+		.left {
+			margin-left: 15%;
+		}
+		.right {
+			margin-right: 15%;
+		}
+
+		header .navbar > li {
+			color: #999999;
+			margin: 0 10px;
+			font-size: 0.9em;
+			line-height: 56px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body onload="draw()">
+<!--header所展示的内容-->
+<header id="here">
+	<div class="left">
+		<a href="./main1.html"><img src="../images/dibulogo.png" alt="" class="fl"></a>
+		<ul class="fl navbar gone">
+			<li class="fl">
+				<a href="./main1.html" class="nav-a" style="color:#ea4c89 ">主页</a>
+			</li>
+			<li class="fl">
+				<a href="model_conversion.html" class="nav-a">模型查看和转换</a>
+			</li>
+			<li class="fl">
+				<a href="about_the_model.html" class="nav-a">模型百科</a>
+			</li>
+			<li class="fl">
+				<a href="keep_in_touch.html" class="nav-a">保持联系</a>
+			</li>
+			<!--<li class="fl">-->
+				<!--<a href="http://www.paramland.com/" target="_blank" class="nav-a">关于我们</a>-->
+			<!--</li>-->
+		</ul>
+	</div>
+	<div class="right">
+		<ul class="fr navbar">
+			<li class="fr gone">
+				<a href="http://www.paramland.com/" target="_blank"><span>关于我们 | Paramland</span></a>
+			</li>
+		</ul>
+	</div>
+</header>
+<div id="info">
+	<!--<div class="pic">-->
+		<!--<img src="./images/数地景观(黑底).png" alt="" class="img">-->
+	<!--</div>-->
+
+	<div class="shudi">
+		<h1>PARAMLAND | 数地景观</h1>
+		<h2>进一步理解空间，发掘更大价值</h2>
+	</div>
+
+	<!--<div class="contact">-->
+		<!--<a href="./keep_in_touch.html">保持联系</a>-->
+	<!--</div>-->
+</div>
+
+
+</body>
+<script type="text/javascript" src="../js/three.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/loaders/GLTFLoader.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/controls/OrbitControls.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/libs/dat.gui.min.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/libs/stats.min.js"></script>
+
+<script type="text/javascript" src="../js/Detector.js"></script>
+<script type="text/javascript" src="../js/ShowHome.js"></script>
+<script type="text/javascript">
+
+
+</script>
+</html>

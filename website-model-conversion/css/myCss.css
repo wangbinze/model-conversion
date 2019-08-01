@@ -3,9 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Buenard', serif;;
+  /*font-family: 'Buenard', serif;;*/
 
-  /*font-family: "Times New Roman", Times, serif;*/
+  font-family: "Times New Roman", Times, serif;
   /*禁止选择文件*/
   /*user-select: none;*/
 }
@@ -148,13 +148,13 @@ header .sub li:hover a {
 #export_scene {
   border: 0;
   margin-top: 10px;
-  width: 100px;
-  height: 25px;
+  width: 130px;
+  height: 30px;
   border-radius: 15%;
 }
 #export_scene:hover {
-  background-color: #006284;
-  color: red;
+  background-color: #7F9CCB;
+  color: #ffffff;
 }
 
 .glb {

@@ -37,7 +37,7 @@ a:active, a:hover {
 
 h1 {
   font-size: 2em;
-  margin: 1.67em 0;
+  margin: 1.67em 0 0.5em 0;
 }
 
 abbr[title] {
@@ -645,7 +645,7 @@ main {
   }
 
   .box {
-    margin: 2rem 4.5rem;
+    margin: 2rem 4.5rem 5rem;
   }
 
   .box__content {

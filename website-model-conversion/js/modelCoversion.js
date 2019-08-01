@@ -378,10 +378,10 @@ function initObj(url) {
 
 	var light;
 	function initLight() {
-		scene1.add(new THREE.AmbientLight(0xffffff, 0.1 ));
+		scene1.add(new THREE.AmbientLight(0xffffff, 1 ));
 
 		light = new THREE.PointLight(0xffffff);
-		light.position.set(0,0,100);
+		light.position.set(0,0,0);
 
 		//告诉平行光需要开启阴影投射
 		// light.castShadow = true;
@@ -530,14 +530,14 @@ function initGltf(url) {
 
 	var light;
 	function initLight() {
-		scene1.add(new THREE.AmbientLight(0xffffff, 0.1 ));
+		scene1.add(new THREE.AmbientLight(0xffffff, 1 ));
 
 		light = new THREE.PointLight(0xffffff);
-		light.position.set(0,0,100);
+		light.position.set(0,0,0);
 
 		//告诉平行光需要开启阴影投射
 		// light.castShadow = true;
-
+		//
 		scene1.add(light);
 
 		// ---------------------------------------------------------------------
@@ -683,7 +683,7 @@ function initDae(url) {
 		);
 	}
 
-	RenderScene();
+	// RenderScene();
 	var renderer;
 	function initRender() {
 		renderer = new THREE.WebGLRenderer({antialias:true});
@@ -711,10 +711,10 @@ function initDae(url) {
 
 	var light;
 	function initLight() {
-		scene1.add(new THREE.AmbientLight(0xffffff, 0.1 ));
+		scene1.add(new THREE.AmbientLight(0xffffff, 1 ));
 
 		light = new THREE.PointLight(0xffffff);
-		light.position.set(0,0,100);
+		light.position.set(0,0,0);
 
 		//告诉平行光需要开启阴影投射
 		// light.castShadow = true;

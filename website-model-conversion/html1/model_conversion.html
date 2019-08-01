@@ -7,8 +7,14 @@
 	<link rel="icon" href="../images/model.ico">
 	<link rel="stylesheet" href="../css/DragAndDrop.css">
 	<link rel="stylesheet" href="../css/myCss.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_1320254_yn0o38y51jp.css">
 	<style>
-
+		.icon-daoru{
+			color: #1296db;
+		}
+		.icon-daochu{
+			color: #1296db;
+		}
 	</style>
 </head>
 <body>
@@ -41,7 +47,7 @@
 	</div>
 </header>
 
-<div id="info">
+<div id="info" style="margin-top: 100px">
 	 <h1>模型查看和转换</h1>
 	<div class="description">
 		<P>您可以通过本页面对你的3D模型进行<b>在线查看</b>和<b>转换</b>，<b>不需要</b>任何第三方软件!</P>
@@ -54,7 +60,7 @@
 	<div class="uploadebutton">
 		<form>
 			<div>
-				<label for="file_uploads">选择你要查看的模型文件(仅支持glTF/dae/obj),点击此处选择或者拖拽到此处</label>
+				<label for="file_uploads"><i class="iconfont icon-daoru"></i>选择你要查看的模型文件(仅支持glTF/dae/obj),点击此处选择或者拖拽到此处</label>
 				<br>
 				<input type="file"
 				       id="file_uploads"
@@ -67,7 +73,7 @@
 	</div>
 </div>
 <div>
-	<button id="export_scene">导出场景</button>
+	<button id="export_scene"><i class="iconfont icon-daochu"></i>导出场景</button>
 </div>
 <div class="glb">
 	<label><input id="option_binary" name="visible" type="checkbox">GLB是glTF2.0文件格式的二进制版本(<code>.glb</code>)(可选项)</label>
@@ -85,6 +91,7 @@
 <script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/loaders/GLTFLoader.js"></script>
 <!--obj加载器-->
 <script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/loaders/OBJLoader.js"></script>
+<script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/loaders/MTLLoader.js"></script>
 <!--dae加载器-->
 <script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/loaders/ColladaLoader.js"></script>
 
@@ -97,7 +104,11 @@
 <script type="text/javascript" src="../ThirdPartyPlugin/ThreeJsPlugin/libs/stats.min.js"></script>
 
 
+<!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+<!--<script type="text/javascript" src="../ThirdPartyPlugin/jcanvas.min.js"></script>-->
+
 <script type="text/javascript" src="../js/modelCoversion.js"></script>
+<!--<script type="text/javascript" src="../js/ShowGltf.js"></script>-->
 
 </body>
 </html>
