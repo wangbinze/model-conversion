@@ -4,7 +4,7 @@ import '@/assets/demo/demo.css';
 import globalDirectives from './globalDirectives';
 import globalMixins from './globalMixins';
 import globalComponents from './globalComponents';
-import lang from 'element-ui/lib/locale/lang/en';
+import lang from 'element-ui/lib/locale/lang/zh-CN';
 import locale from 'element-ui/lib/locale';
 import VueLazyload from 'vue-lazyload';
 

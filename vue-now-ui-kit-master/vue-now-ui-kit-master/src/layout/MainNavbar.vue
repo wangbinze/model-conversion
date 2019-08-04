@@ -23,7 +23,7 @@
       </el-popover>
     </template>
     <template slot="navbar-menu">
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a
           class="nav-link"
           href="https://www.creative-tim.com/product/vue-now-ui-kit"
@@ -32,7 +32,7 @@
           <i class="now-ui-icons arrows-1_cloud-download-93"></i>
           <p>Download</p>
         </a>
-      </li>
+      </li>-->
       <drop-down
         tag="li"
         title="Components"
@@ -66,7 +66,7 @@
           <i class="now-ui-icons users_single-02"></i> Profile
         </nav-link>
       </drop-down>
-      <li class="nav-item">
+      <!--<li class="nav-item">
         <a
           class="nav-link btn btn-neutral"
           href="https://www.creative-tim.com/product/vue-now-ui-kit-pro"
@@ -75,7 +75,7 @@
           <i class="now-ui-icons arrows-1_share-66"></i>
           <p>Upgrade to PRO</p>
         </a>
-      </li>
+      </li>-->
 
       <li class="nav-item">
         <a
