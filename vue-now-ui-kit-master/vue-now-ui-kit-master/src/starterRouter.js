@@ -2,7 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Starter from './pages/StarterPage.vue';
 import StarterNavbar from './layout/StarterNavbar.vue';
-import StarterFooter from './layout/StarterFooter.vue';
+
+// import StarterFooter from './layout/StarterFooter.vue';
 
 Vue.use(Router);
 
@@ -14,11 +15,11 @@ export default new Router({
       components: {
         default: Starter,
         header: StarterNavbar,
-        footer: StarterFooter
+        // footer: StarterFooter
       },
       props: {
         header: { colorOnScroll: 400 },
-        footer: { backgroundColor: 'black' }
+        // footer: { backgroundColor: 'black' }
       }
     }
   ],

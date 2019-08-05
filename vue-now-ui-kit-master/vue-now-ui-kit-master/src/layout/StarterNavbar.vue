@@ -1,39 +1,33 @@
 <template>
-  <navbar position="fixed" type="primary" menu-classes="ml-auto">
-    <template slot-scope="{ toggle, isToggled }">
-      <router-link v-popover:popover1 class="navbar-brand" to="/presentation">
-        My Site Name
-      </router-link>
-      <el-popover
-        ref="popover1"
-        popper-class="popover"
-        placement="bottom"
-        width="200"
-        trigger="hover"
-      >
-        <div class="popover-body">
-          Designed by Invision. Coded by Creative Tim
-        </div>
-      </el-popover>
+  <navbar position="fixed" type="primary" menu-classes="mr-auto">
+    <a class="navbar-brand" href="http://www.paramland.com/">数地景观</a>
+    <template slot="navbar-menu">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
+      </li>
+      <!--<nav-link to="/">-->
+        <!--All components-->
+      <!--</nav-link>-->
+      <li class="nav-item">
+        <a class="nav-link" href="#">模型查看和转换</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">模型百科</a>
+      </li>
     </template>
     <template slot="navbar-menu">
-      <drop-down tag="li" title="Sample Dropdown">
-        <nav-link class="dropdown-item">
-          <i class="now-ui-icons shopping_box"></i> Headers
-        </nav-link>
-      </drop-down>
     </template>
   </navbar>
 </template>
 
 <script>
-import { DropDown, NavbarToggleButton, Navbar, NavLink } from '@/components';
+import { NavbarToggleButton, Navbar, NavLink } from '@/components';
 import { Popover } from 'element-ui';
 
 export default {
   name: 'main-navbar',
   components: {
-    DropDown,
+    // DropDown,
     Navbar,
     NavbarToggleButton,
     NavLink,
