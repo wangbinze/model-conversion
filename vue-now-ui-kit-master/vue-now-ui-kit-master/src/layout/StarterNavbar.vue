@@ -1,6 +1,6 @@
 <template>
   <navbar position="fixed" type="primary" menu-classes="mr-auto">
-    <a class="navbar-brand" href="http://www.paramland.com/">数地景观</a>
+    <a class="navbar-brand" href="http://www.paramland.com/" target="_blank">数地景观</a>
     <template slot="navbar-menu">
       <li class="nav-item active">
         <a class="nav-link" href="#">首页 <span class="sr-only">(current)</span></a>
