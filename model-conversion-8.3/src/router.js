@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
+//引入第一个页面
 import Home from './views/Home.vue'
 
 Vue.use(Router);
