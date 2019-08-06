@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">主页</router-link> |
-      <router-link to="/about">关于</router-link>
+      <router-link to="/about">关于</router-link> |
+      <router-link to="/info">信息</router-link>
     </div>
     <router-view/>
   </div>
@@ -17,4 +18,5 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
