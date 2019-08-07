@@ -11,7 +11,7 @@
 
 <script>
 	export default {
-		name: "qiuArrow",
+		name: "",
 		data: function () {
 			return {
 				commonClass: 'nav-item',
