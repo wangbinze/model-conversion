@@ -1,10 +1,10 @@
 <template>
-	<h1>我是home的子组件</h1>
+
 </template>
 
 <script>
 	export default {
-		name: "1"
+		name: "index.vue"
 	}
 </script>
 
