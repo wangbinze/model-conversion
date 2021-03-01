@@ -13,7 +13,7 @@
     "gltf-loader": "^0.1.0",
     "mtl-loader": "^0.2.0",
     "orbit-controls": "^1.2.4",
-    "three": "^0.106.2",
+    "three": "^0.125.0",
     "three-gltf-loader": "^1.106.0",
     "three-gltf2-helpers": "^1.0.9",
     "three-obj-mtl-loader": "^1.0.3",
